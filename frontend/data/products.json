@@ -7,11 +7,11 @@
     "originalPrice": 129.99,
     "discount": 31,
     "category": "Desk Lamps",
-    "image": "/images/DSC02969.png",
+    "image": "/images/plainlight.png",
     "images": [
-      "/images/DSC02969.png",
-      "/images/DSC02973.png",
-      "/images/01 copy.jpg"
+      "/images/plainlight.png",
+      "/images/plainlight2.png",
+      "/images/lightimg.jpg"
     ],
     "rating": 4.8,
     "reviews": 124,
@@ -39,11 +39,11 @@
     "originalPrice": 199.99,
     "discount": 25,
     "category": "Pendant Lights",
-    "image": "/images/DSC02973.png",
+    "image": "/images/plainlight2.png",
     "images": [
-      "/images/DSC02973.png",
-      "/images/DSC02969.png",
-      "/images/2 copy.jpg"
+      "/images/plainlight2.png",
+      "/images/plainlight.png",
+      "/images/lightimg2.jpg"
     ],
     "rating": 4.6,
     "reviews": 89,
@@ -71,11 +71,11 @@
     "originalPrice": 249.99,
     "discount": 28,
     "category": "Floor Lamps",
-    "image": "/images/01 copy.jpg",
+    "image": "/images/lightimg.jpg",
     "images": [
-      "/images/01 copy.jpg",
-      "/images/3 copy.jpg",
-      "/images/DSC02969.png"
+      "/images/lightimg.jpg",
+      "/images/lightimg2.jpg",
+      "/images/plainlight.png"
     ],
     "rating": 4.7,
     "reviews": 156,
@@ -103,11 +103,11 @@
     "originalPrice": 179.99,
     "discount": 28,
     "category": "Table Lamps",
-    "image": "/images/2 copy.jpg",
+    "image": "/images/lightimg2.jpg",
     "images": [
-      "/images/2 copy.jpg",
-      "/images/5 copy.jpg",
-      "/images/01 copy.jpg"
+      "/images/lightimg2.jpg",
+      "/images/lightimg3.jpg",
+      "/images/lightimg.jpg"
     ],
     "rating": 4.9,
     "reviews": 203,
@@ -135,11 +135,11 @@
     "originalPrice": 399.99,
     "discount": 25,
     "category": "Chandeliers",
-    "image": "/images/3 copy.jpg",
+    "image": "/images/lightimg3.jpg",
     "images": [
-      "/images/3 copy.jpg",
-      "/images/6 copy.jpg",
-      "/images/DSC02973.png"
+      "/images/lightimg3.jpg",
+      "/images/lightimg4.jpg",
+      "/images/plainlight2.png"
     ],
     "rating": 4.8,
     "reviews": 167,
@@ -167,11 +167,11 @@
     "originalPrice": 119.99,
     "discount": 33,
     "category": "Wall Lights",
-    "image": "/images/5 copy.jpg",
+    "image": "/images/lightimg4.jpg",
     "images": [
-      "/images/5 copy.jpg",
-      "/images/2 copy.jpg",
-      "/images/01 copy.jpg"
+      "/images/lightimg4.jpg",
+      "/images/lightimg5.jpg",
+      "/images/lightimg.jpg"
     ],
     "rating": 4.5,
     "reviews": 78,
@@ -199,11 +199,11 @@
     "originalPrice": 149.99,
     "discount": 33,
     "category": "Ceiling Lights",
-    "image": "/images/6 copy.jpg",
+    "image": "/images/lightimg5.jpg",
     "images": [
-      "/images/6 copy.jpg",
-      "/images/3 copy.jpg",
-      "/images/DSC02969.png"
+      "/images/lightimg5.jpg",
+      "/images/lightimg3.jpg",
+      "/images/plainlight.png"
     ],
     "rating": 4.6,
     "reviews": 134,
@@ -231,11 +231,11 @@
     "originalPrice": 99.99,
     "discount": 30,
     "category": "Smart Lighting",
-    "image": "/images/01 copy.jpg",
+    "image": "/images/B4.png",
     "images": [
-      "/images/01 copy.jpg",
-      "/images/5 copy.jpg",
-      "/images/6 copy.jpg"
+      "/images/B4.png",
+      "/images/C2.png",
+      "/images/lightimg5.jpg"
     ],
     "rating": 4.7,
     "reviews": 289,
@@ -263,11 +263,11 @@
     "originalPrice": 599.99,
     "discount": 25,
     "category": "Luxury Lighting",
-    "image": "/images/G 3.png",
+    "image": "/images/G3.png",
     "images": [
-      "/images/G 3.png",
+      "/images/G3.png",
       "/images/G 2.png",
-      "/images/D 3.png"
+      "/images/D3.png"
     ],
     "rating": 4.9,
     "reviews": 234,
@@ -298,8 +298,8 @@
     "image": "/images/G 2.png",
     "images": [
       "/images/G 2.png",
-      "/images/G 3.png",
-      "/images/D 3.png"
+      "/images/G3.png",
+      "/images/D3.png"
     ],
     "rating": 4.7,
     "reviews": 189,
@@ -327,11 +327,11 @@
     "originalPrice": 799.99,
     "discount": 25,
     "category": "Designer Lighting",
-    "image": "/images/D 3.png",
+    "image": "/images/D3.png",
     "images": [
-      "/images/D 3.png",
+      "/images/D3.png",
       "/images/G 2.png",
-      "/images/G 3.png"
+      "/images/G3.png"
     ],
     "rating": 4.8,
     "reviews": 156,
