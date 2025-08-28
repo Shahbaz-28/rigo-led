@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "title": "Modern LED Desk Lamp",
+    "description": "Sleek and modern LED desk lamp with adjustable brightness and color temperature. Perfect for home office or study area. Features touch controls and USB charging port.",
+    "price": 89.99,
+    "originalPrice": 129.99,
+    "discount": 31,
+    "category": "Desk Lamps",
+    "image": "/images/DSC02969.png",
+    "images": [
+      "/images/DSC02969.png",
+      "/images/DSC02973.png",
+      "/images/01 copy.jpg"
+    ],
+    "rating": 4.8,
+    "reviews": 124,
+    "inStock": true,
+    "features": [
+      "Adjustable brightness",
+      "Color temperature control",
+      "USB charging port",
+      "Touch controls",
+      "Energy efficient LED"
+    ],
+    "specifications": {
+      "power": "15W",
+      "colorTemperature": "3000K-6500K",
+      "material": "Aluminum + ABS",
+      "dimensions": "45cm x 15cm x 8cm",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Vintage Industrial Pendant Light",
+    "description": "Beautiful vintage-style industrial pendant light with exposed bulb design. Perfect for dining rooms, kitchens, or as a statement piece in any room. Includes adjustable cord length.",
+    "price": 149.99,
+    "originalPrice": 199.99,
+    "discount": 25,
+    "category": "Pendant Lights",
+    "image": "/images/DSC02973.png",
+    "images": [
+      "/images/DSC02973.png",
+      "/images/DSC02969.png",
+      "/images/2 copy.jpg"
+    ],
+    "rating": 4.6,
+    "reviews": 89,
+    "inStock": true,
+    "features": [
+      "Vintage industrial design",
+      "Exposed bulb aesthetic",
+      "Adjustable cord length",
+      "Easy installation",
+      "Compatible with various bulb types"
+    ],
+    "specifications": {
+      "power": "60W max",
+      "material": "Metal + Glass",
+      "cordLength": "Adjustable up to 120cm",
+      "dimensions": "Diameter: 25cm",
+      "warranty": "1 year"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Contemporary Floor Lamp",
+    "description": "Elegant contemporary floor lamp with minimalist design. Features a curved arm and adjustable head for perfect lighting positioning. Ideal for living rooms and reading corners.",
+    "price": 179.99,
+    "originalPrice": 249.99,
+    "discount": 28,
+    "category": "Floor Lamps",
+    "image": "/images/01 copy.jpg",
+    "images": [
+      "/images/01 copy.jpg",
+      "/images/3 copy.jpg",
+      "/images/DSC02969.png"
+    ],
+    "rating": 4.7,
+    "reviews": 156,
+    "inStock": true,
+    "features": [
+      "Minimalist contemporary design",
+      "Adjustable head",
+      "Curved arm design",
+      "Stable base",
+      "Easy assembly"
+    ],
+    "specifications": {
+      "power": "40W max",
+      "material": "Steel + Fabric",
+      "height": "160cm",
+      "baseDiameter": "35cm",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Art Deco Table Lamp",
+    "description": "Stunning Art Deco inspired table lamp with geometric patterns and premium materials. Perfect for adding elegance to any room. Features a dimmer switch for ambient lighting control.",
+    "price": 129.99,
+    "originalPrice": 179.99,
+    "discount": 28,
+    "category": "Table Lamps",
+    "image": "/images/2 copy.jpg",
+    "images": [
+      "/images/2 copy.jpg",
+      "/images/5 copy.jpg",
+      "/images/01 copy.jpg"
+    ],
+    "rating": 4.9,
+    "reviews": 203,
+    "inStock": true,
+    "features": [
+      "Art Deco design",
+      "Geometric patterns",
+      "Dimmer switch",
+      "Premium materials",
+      "Elegant finish"
+    ],
+    "specifications": {
+      "power": "25W max",
+      "material": "Brass + Glass",
+      "height": "45cm",
+      "baseDiameter": "20cm",
+      "warranty": "3 years"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Modern Chandelier",
+    "description": "Contemporary chandelier with crystal accents and LED technology. Creates beautiful light patterns and adds sophistication to any space. Perfect for dining rooms and entryways.",
+    "price": 299.99,
+    "originalPrice": 399.99,
+    "discount": 25,
+    "category": "Chandeliers",
+    "image": "/images/3 copy.jpg",
+    "images": [
+      "/images/3 copy.jpg",
+      "/images/6 copy.jpg",
+      "/images/DSC02973.png"
+    ],
+    "rating": 4.8,
+    "reviews": 167,
+    "inStock": true,
+    "features": [
+      "Crystal accents",
+      "LED technology",
+      "Remote control",
+      "Multiple light modes",
+      "Easy installation"
+    ],
+    "specifications": {
+      "power": "60W total",
+      "material": "Crystal + Metal",
+      "diameter": "60cm",
+      "height": "80cm",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Rustic Wall Sconce",
+    "description": "Charming rustic wall sconce with vintage appeal. Perfect for creating warm, ambient lighting in hallways, bedrooms, or outdoor spaces. Features weather-resistant construction.",
+    "price": 79.99,
+    "originalPrice": 119.99,
+    "discount": 33,
+    "category": "Wall Lights",
+    "image": "/images/5 copy.jpg",
+    "images": [
+      "/images/5 copy.jpg",
+      "/images/2 copy.jpg",
+      "/images/01 copy.jpg"
+    ],
+    "rating": 4.5,
+    "reviews": 78,
+    "inStock": true,
+    "features": [
+      "Rustic vintage design",
+      "Weather resistant",
+      "Easy installation",
+      "Warm ambient light",
+      "Durable construction"
+    ],
+    "specifications": {
+      "power": "40W max",
+      "material": "Iron + Glass",
+      "dimensions": "25cm x 15cm x 8cm",
+      "weatherRating": "IP44",
+      "warranty": "1 year"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Minimalist Ceiling Light",
+    "description": "Clean and minimalist ceiling light with flush mount design. Provides excellent ambient lighting while maintaining a modern aesthetic. Perfect for contemporary homes.",
+    "price": 99.99,
+    "originalPrice": 149.99,
+    "discount": 33,
+    "category": "Ceiling Lights",
+    "image": "/images/6 copy.jpg",
+    "images": [
+      "/images/6 copy.jpg",
+      "/images/3 copy.jpg",
+      "/images/DSC02969.png"
+    ],
+    "rating": 4.6,
+    "reviews": 134,
+    "inStock": true,
+    "features": [
+      "Minimalist design",
+      "Flush mount",
+      "Energy efficient",
+      "Easy installation",
+      "Modern aesthetic"
+    ],
+    "specifications": {
+      "power": "30W",
+      "material": "Aluminum + Acrylic",
+      "diameter": "40cm",
+      "height": "8cm",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Smart LED Strip Lights",
+    "description": "Advanced smart LED strip lights with WiFi connectivity and voice control. Create the perfect ambiance with millions of color options and music synchronization.",
+    "price": 69.99,
+    "originalPrice": 99.99,
+    "discount": 30,
+    "category": "Smart Lighting",
+    "image": "/images/01 copy.jpg",
+    "images": [
+      "/images/01 copy.jpg",
+      "/images/5 copy.jpg",
+      "/images/6 copy.jpg"
+    ],
+    "rating": 4.7,
+    "reviews": 289,
+    "inStock": true,
+    "features": [
+      "WiFi connectivity",
+      "Voice control",
+      "Music sync",
+      "16 million colors",
+      "App control"
+    ],
+    "specifications": {
+      "power": "24W per 5m",
+      "length": "5 meters",
+      "connectivity": "WiFi 2.4GHz",
+      "compatibility": "Alexa, Google Home",
+      "warranty": "1 year"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Luxury Crystal Pendant",
+    "description": "Exquisite luxury crystal pendant light with premium cut crystals and gold-plated finish. Creates stunning light reflections and adds opulence to any space. Perfect for grand entryways and dining areas.",
+    "price": 449.99,
+    "originalPrice": 599.99,
+    "discount": 25,
+    "category": "Luxury Lighting",
+    "image": "/images/G 3.png",
+    "images": [
+      "/images/G 3.png",
+      "/images/G 2.png",
+      "/images/D 3.png"
+    ],
+    "rating": 4.9,
+    "reviews": 234,
+    "inStock": true,
+    "features": [
+      "Premium cut crystals",
+      "Gold-plated finish",
+      "Adjustable height",
+      "Dimmable control",
+      "Luxury packaging"
+    ],
+    "specifications": {
+      "power": "80W max",
+      "material": "Crystal + Gold-plated Metal",
+      "diameter": "45cm",
+      "height": "Adjustable 60-120cm",
+      "warranty": "3 years"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Modern Geometric Chandelier",
+    "description": "Contemporary geometric chandelier with clean lines and modern design. Features multiple light sources arranged in a geometric pattern for stunning visual appeal. Ideal for modern homes and offices.",
+    "price": 379.99,
+    "originalPrice": 499.99,
+    "discount": 24,
+    "category": "Modern Chandeliers",
+    "image": "/images/G 2.png",
+    "images": [
+      "/images/G 2.png",
+      "/images/G 3.png",
+      "/images/D 3.png"
+    ],
+    "rating": 4.7,
+    "reviews": 189,
+    "inStock": true,
+    "features": [
+      "Geometric design",
+      "Multiple light sources",
+      "LED technology",
+      "Remote control",
+      "Easy installation"
+    ],
+    "specifications": {
+      "power": "90W total",
+      "material": "Aluminum + Glass",
+      "diameter": "70cm",
+      "height": "85cm",
+      "warranty": "2 years"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Designer Statement Light",
+    "description": "Bold designer statement light with unique architectural design. Makes a dramatic impact in any room with its distinctive silhouette and premium materials. Perfect for contemporary interiors.",
+    "price": 599.99,
+    "originalPrice": 799.99,
+    "discount": 25,
+    "category": "Designer Lighting",
+    "image": "/images/D 3.png",
+    "images": [
+      "/images/D 3.png",
+      "/images/G 2.png",
+      "/images/G 3.png"
+    ],
+    "rating": 4.8,
+    "reviews": 156,
+    "inStock": true,
+    "features": [
+      "Architectural design",
+      "Statement piece",
+      "Premium materials",
+      "Customizable finish",
+      "Professional installation included"
+    ],
+    "specifications": {
+      "power": "120W max",
+      "material": "Steel + Glass + Brass",
+      "dimensions": "80cm x 60cm x 40cm",
+      "weight": "15kg",
+      "warranty": "5 years"
+    }
+  }
+]
