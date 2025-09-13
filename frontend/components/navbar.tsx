@@ -1,13 +1,15 @@
 "use client"
 
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { FaWhatsapp, FaInstagram } from "react-icons/fa"
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +19,21 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isProductsDropdownOpen) {
+        const target = event.target as Element
+        if (!target.closest('[data-dropdown]')) {
+          setIsProductsDropdownOpen(false)
+        }
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [isProductsDropdownOpen])
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -34,10 +51,13 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <img 
+              <Image 
                 src="/images/logo.png" 
-                alt="LAMPITA Logo" 
-                className="h-8 sm:h-10 w-auto"
+                alt="RIGO Logo" 
+                width={120}
+                height={50}
+                className="h-10 sm:h-12 lg:h-14 w-auto"
+                priority
               />
             </Link>
           </div>
@@ -47,9 +67,40 @@ export default function Navbar() {
             <Link href="/" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
               HOME
             </Link>
-            <Link href="/products" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
-              All Products
-            </Link>
+            
+            {/* Products Dropdown */}
+            <div className="relative" data-dropdown>
+              <button
+                onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+                className="flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
+              >
+                All Products
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              
+              {/* Dropdown Menu */}
+              {isProductsDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+                  <div className="py-2">
+                    <Link
+                      href="/products?tab=indoor"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                      onClick={() => setIsProductsDropdownOpen(false)}
+                    >
+                      Indoor Products
+                    </Link>
+                    <Link
+                      href="/products?tab=outdoor"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                      onClick={() => setIsProductsDropdownOpen(false)}
+                    >
+                      Outdoor Products
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+            
             <a href="#about" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
               About Us
             </a>
@@ -113,13 +164,30 @@ export default function Navbar() {
             >
               HOME
             </Link>
-            <Link 
-              href="/products" 
-              className="block py-3 text-base font-medium text-gray-900 hover:text-gray-600 border-b border-gray-100"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              All Products
-            </Link>
+            
+            {/* Products Section */}
+            <div className="border-b border-gray-100">
+              <div className="py-3 text-base font-medium text-gray-900">
+                All Products
+              </div>
+              <div className="pl-4 space-y-2">
+                <Link 
+                  href="/products?tab=indoor" 
+                  className="block py-2 text-sm text-gray-700 hover:text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Indoor Products
+                </Link>
+                <Link 
+                  href="/products?tab=outdoor" 
+                  className="block py-2 text-sm text-gray-700 hover:text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Outdoor Products
+                </Link>
+              </div>
+            </div>
+            
             <a 
               href="#about" 
               className="block py-3 text-base font-medium text-gray-900 hover:text-gray-600 border-b border-gray-100"

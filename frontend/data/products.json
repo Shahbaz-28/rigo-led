@@ -1,33 +1,31 @@
 [
   {
     "id": 1,
-    "title": "Modern LED Desk Lamp",
-    "description": "Sleek and modern LED desk lamp with adjustable brightness and color temperature. Perfect for home office or study area. Features touch controls and USB charging port.",
-    "price": 89.99,
-    "originalPrice": 129.99,
-    "discount": 31,
-    "category": "Desk Lamps",
-    "image": "/images/plainlight.png",
+    "title": "Nexus Series",
+    "description": "Premium LED downlight series with multiple power options and color variants. Features high-quality construction with various body colors and beam angles for versatile lighting solutions.",
+    "price": 45.99,
+    "originalPrice": 65.99,
+    "discount": 30,
+    "category": "Downlights",
+    "image": "/images/product details/IMG-20250903-WA0006.jpg",
     "images": [
-      "/images/plainlight.png",
-      "/images/plainlight2.png",
-      "/images/lightimg.jpg"
+      "/images/product details/IMG-20250903-WA0006.jpg"
     ],
     "rating": 4.8,
     "reviews": 124,
     "inStock": true,
     "features": [
-      "Adjustable brightness",
-      "Color temperature control",
-      "USB charging port",
-      "Touch controls",
-      "Energy efficient LED"
+      "Multiple power options (7W, 12W, 18W)",
+      "Various body colors available",
+      "Precise beam angles",
+      "High-quality chip technology",
+      "Easy installation"
     ],
     "specifications": {
-      "power": "15W",
-      "colorTemperature": "3000K-6500K",
-      "material": "Aluminum + ABS",
-      "dimensions": "45cm x 15cm x 8cm",
+      "power": "7W-18W",
+      "bodyColor": "BK+GBK/RGD/GD/WH",
+      "chipSize": "13.5*13.5*11 mm",
+      "beamAngle": "24°-38°",
       "warranty": "2 years"
     }
   },
@@ -266,7 +264,7 @@
     "image": "/images/G3.png",
     "images": [
       "/images/G3.png",
-      "/images/G 2.png",
+      "/images/G2.png",
       "/images/D3.png"
     ],
     "rating": 4.9,

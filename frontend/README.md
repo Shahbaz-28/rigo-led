@@ -37,7 +37,8 @@ frontend/
 │   ├── card-parallax-section.tsx # Interactive parallax
 │   └── why-choose-us.tsx # Company features
 ├── data/                 # Data files
-│   ├── products.json     # Product catalog data
+│   ├── mainproduct.json  # Main product catalog data
+│   ├── products.json     # Legacy product data (deprecated)
 │   └── projects.ts       # Parallax section data
 ├── public/               # Static assets
 │   └── images/           # Product images
@@ -103,7 +104,7 @@ frontend/
 
 ### Adding New Products
 1. Add product images to `public/images/`
-2. Update `data/products.json` with product details
+2. Update `data/mainproduct.json` with product details
 3. Products will automatically appear in the catalog
 
 ### Styling
