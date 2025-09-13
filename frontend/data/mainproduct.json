@@ -10,35 +10,14 @@
           "images/products/Nexus Series (4).png"
         ],
         "specifications": {
-          "items": [
-            {
-              "item_no": "W1.CB15-7W",
-              "power": "7W",
-              "size": "Φ62*H59 mm",
-              "cut_out": "Φ55 mm",
-              "body_color": "BK+GBK/RGD/GD/WH",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "W1.CB15-12W",
-              "power": "12W",
-              "size": "Φ85*H64 mm",
-              "cut_out": "Φ75 mm",
-              "body_color": "BK+GBK/RGD/GD/WH",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "W1.CB15-18W",
-              "power": "18W",
-              "size": "Φ105*H72 mm",
-              "cut_out": "Φ95 mm",
-              "body_color": "BK+GBK/RGD/GD/WH",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            }
-          ]
+          "item_code": "W1.CB15",
+          "watt": "7W / 12W / 18W",
+          "reflector_color": "AB / GB / RG / MW / SB",
+          "body_color": "Golden / Silver / White",
+          "beam_angle": "24° / 38°",
+          "dimension": "63*63*43 / 80*80*44 / 94*84*51",
+          "cutout": "55MM / 75MM / 85MM",
+          "chip_size": "13.5*13.5*11 mm"
         }
       },
       {

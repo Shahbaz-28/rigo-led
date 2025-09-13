@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation"
 import { ArrowLeft, Heart, MessageCircle, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import mainProductsData from "@/data/mainproduct.json"
+// @ts-ignore
 import ImageGallery from "react-image-gallery"
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -131,81 +132,52 @@ export default function ProductDetails() {
 
             {/* Specifications */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Product Variants</h3>
-              <div className="space-y-4">
-                {product.specifications.items && product.specifications.items.map((item: any, index: number) => (
-                  <div key={index} className="border border-gray-200 rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{item.item_no || `Variant ${index + 1}`}</h4>
-                    <div className="grid grid-cols-2 gap-2 text-sm">
-                      {item.power && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Power:</span>
-                          <span className="text-gray-900 font-medium">{item.power}</span>
-                        </div>
-                      )}
-                      {item.size && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Size:</span>
-                          <span className="text-gray-900 font-medium">{item.size}</span>
-                        </div>
-                      )}
-                      {item.dimension && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Dimension:</span>
-                          <span className="text-gray-900 font-medium">{item.dimension}</span>
-                        </div>
-                      )}
-                      {item.cut_out && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Cut Out:</span>
-                          <span className="text-gray-900 font-medium">{item.cut_out}</span>
-                        </div>
-                      )}
-                      {item.cutout_size && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Cut Out Size:</span>
-                          <span className="text-gray-900 font-medium">{item.cutout_size}</span>
-                        </div>
-                      )}
-                      {item.outer_size && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Outer Size:</span>
-                          <span className="text-gray-900 font-medium">{item.outer_size}</span>
-                        </div>
-                      )}
-                      {item.body_color && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Body Color:</span>
-                          <span className="text-gray-900 font-medium">{item.body_color}</span>
-                        </div>
-                      )}
-                      {item.chip_size && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Chip Size:</span>
-                          <span className="text-gray-900 font-medium">{item.chip_size}</span>
-                        </div>
-                      )}
-                      {item.beam_angle && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">Beam Angle:</span>
-                          <span className="text-gray-900 font-medium">{item.beam_angle}</span>
-                        </div>
-                      )}
-                      {item.pcb_1 && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">PCB 1:</span>
-                          <span className="text-gray-900 font-medium">{item.pcb_1}</span>
-                        </div>
-                      )}
-                      {item.pcb_2 && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-600">PCB 2:</span>
-                          <span className="text-gray-900 font-medium">{item.pcb_2}</span>
-                        </div>
-                      )}
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Specifications</h3>
+              <div className="bg-gray-50 rounded-lg p-4 md:p-6">
+                <div className="space-y-3">
+                  {product.specifications.item_code && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">ITEM CODE:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.item_code}</span>
                     </div>
-                  </div>
-                ))}
+                  )}
+                  {product.specifications.watt && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">WATT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.watt}</span>
+                    </div>
+                  )}
+                  {product.specifications.reflector_color && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">REFLECTOR COLOR:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.reflector_color}</span>
+                    </div>
+                  )}
+                  {product.specifications.body_color && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">BODY COLOR:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.body_color}</span>
+                    </div>
+                  )}
+                  {product.specifications.beam_angle && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">BEAM ANGLE:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.beam_angle}</span>
+                    </div>
+                  )}
+                  {product.specifications.dimension && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">DIMENSION:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.dimension}</span>
+                    </div>
+                  )}
+                  {product.specifications.cutout && (
+                    <div className="flex justify-between items-start py-2">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">CUTOUT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.cutout}</span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 

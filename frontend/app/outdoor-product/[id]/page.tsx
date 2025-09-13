@@ -137,6 +137,69 @@ export default function OutdoorProductDetails() {
               </ul>
             </div>
 
+            {/* Specifications */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Specifications</h3>
+              <div className="bg-gray-50 rounded-lg p-4 md:p-6">
+                <div className="space-y-3">
+                  {product.product_code && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">PRODUCT CODE:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.product_code}</span>
+                    </div>
+                  )}
+                  {product.specifications.body_weight && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">BODY WEIGHT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.body_weight}</span>
+                    </div>
+                  )}
+                  {product.specifications.frame_weight && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">FRAME WEIGHT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.frame_weight}</span>
+                    </div>
+                  )}
+                  {product.specifications.driver_box_weight && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">DRIVER BOX WEIGHT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.driver_box_weight}</span>
+                    </div>
+                  )}
+                  {product.specifications.total_casting_weight && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">TOTAL CASTING WEIGHT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.total_casting_weight}</span>
+                    </div>
+                  )}
+                  {product.specifications.pcb_size && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">PCB SIZE:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.pcb_size}</span>
+                    </div>
+                  )}
+                  {product.specifications.driver_area && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">DRIVER AREA:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.driver_area}</span>
+                    </div>
+                  )}
+                  {product.specifications.outer_dimensions && (
+                    <div className="flex justify-between items-start py-2 border-b border-gray-200">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">OUTER DIMENSIONS:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.outer_dimensions}</span>
+                    </div>
+                  )}
+                  {product.specifications.gross_weight && (
+                    <div className="flex justify-between items-start py-2">
+                      <span className="text-gray-600 font-medium text-sm sm:text-base pr-2 flex-shrink-0">GROSS WEIGHT:</span>
+                      <span className="text-gray-900 font-semibold text-sm sm:text-base break-words text-right">{product.specifications.gross_weight}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
             {/* Action Buttons */}
             <div className="flex space-x-4 pt-6">
               <Button 
