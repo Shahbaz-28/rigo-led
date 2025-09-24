@@ -27,14 +27,14 @@ const Card = ({ i, title, description, src, link, color, progress, range, target
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="h-screen flex items-center justify-center sticky top-0">
+    <div ref={container} className="h-[70vh] md:h-screen flex items-center justify-center sticky top-0">
       <motion.div 
         style={{
           backgroundColor: color, 
           scale, 
           top: `calc(-5vh + ${i * 25}px)`
         }} 
-        className="flex flex-col relative -top-1/4 h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[1000px] rounded-[15px] sm:rounded-[20px] lg:rounded-[25px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] origin-top"
+        className="flex flex-col relative -top-1/4 h-[390px] sm:h-[450px] md:h-[480px] lg:h-[520px] w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[1000px] rounded-[15px] sm:rounded-[20px] lg:rounded-[25px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] origin-top"
       >
         <h2 className="text-center m-0 text-[18px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-semibold text-white leading-tight">{title}</h2>
         <div className="flex flex-col lg:flex-row h-full mt-[20px] sm:mt-[30px] md:mt-[40px] lg:mt-[50px] gap-[20px] sm:gap-[30px] md:gap-[40px] lg:gap-[50px]">

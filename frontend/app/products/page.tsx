@@ -1,148 +1,254 @@
 "use client"
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import { Search, Filter, Star } from "lucide-react"
-import productsData from "@/data/products.json"
+import { useState, useEffect } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
+import { Search, Filter } from "lucide-react"
+import unifiedProductsData from "@/data/unified-products.json"
+import Image from "next/image"
 
 export default function ProductsPage() {
   const router = useRouter()
+  const searchParams = useSearchParams()
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [sortBy, setSortBy] = useState("name")
+  const [activeTab, setActiveTab] = useState("indoor")
+  const [loadingImages, setLoadingImages] = useState(new Set<string>())
 
-  // Get unique categories
-  const categories = ["All", ...Array.from(new Set(productsData.map(product => product.category)))]
+  // Get tab from URL parameter
+  useEffect(() => {
+    const tabParam = searchParams.get('tab')
+    if (tabParam === 'outdoor' || tabParam === 'indoor') {
+      setActiveTab(tabParam)
+    }
+  }, [searchParams])
 
-  // Filter and sort products
-  const filteredProducts = productsData
-    .filter(product => {
+  // Reset category when tab changes
+  useEffect(() => {
+    setSelectedCategory("All")
+  }, [activeTab])
+
+  // Get all products from unified data
+  const allProducts = unifiedProductsData.products
+
+  // Separate products by tab field
+  const indoorProducts = allProducts.filter(product => product.tab === 'indoor')
+  const outdoorProducts = allProducts.filter(product => product.tab === 'outdoor')
+
+  const handleProductClick = (productId: number) => {
+    // Check if it's an outdoor product (ID >= 100)
+    if (productId >= 100) {
+      router.push(`/outdoor-product/${productId}`)
+    } else {
+      router.push(`/product/${productId}`)
+    }
+  }
+
+  // Filter function for products
+  const filterProducts = (products: any[]) => {
+    return products.filter(product => {
       const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           product.description.toLowerCase().includes(searchTerm.toLowerCase())
+        product.description.toLowerCase().includes(searchTerm.toLowerCase())
       const matchesCategory = selectedCategory === "All" || product.category === selectedCategory
       return matchesSearch && matchesCategory
     })
-    .sort((a, b) => {
-      switch (sortBy) {
-        case "rating":
-          return b.rating - a.rating
-        case "name":
-        default:
-          return a.title.localeCompare(b.title)
-      }
-    })
-
-  const handleProductClick = (productId: number) => {
-    router.push(`/product/${productId}`)
   }
 
+  const filteredIndoorProducts = filterProducts(indoorProducts)
+  const filteredOutdoorProducts = filterProducts(outdoorProducts)
+
+  // Get categories for current tab
+  const getCategories = (products: any[]) => {
+    return ["All", ...Array.from(new Set(products.map(product => product.category)))]
+  }
+
+  // Get current products based on active tab
+  const currentProducts = activeTab === 'indoor' ? indoorProducts : outdoorProducts
+  const filteredCurrentProducts = activeTab === 'indoor' ? filteredIndoorProducts : filteredOutdoorProducts
+
+  // Premium Product Card Component
+  const ProductCard = ({ product }: { product: any }) => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    return (
+      <div
+        className="group cursor-pointer transform transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1"
+        onClick={() => handleProductClick(product.id)}
+      >
+        <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 min-h-[480px] flex flex-col">
+
+          {/* Image Container */}
+          <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden flex items-center justify-center">
+            {!imageLoaded && (
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
+            )}
+
+            <div className="relative w-full h-full transition-all duration-500 p-4">
+              <Image
+                src={product.image || "/placeholder.svg"}
+                alt={product.title}
+                fill
+                className="object-cover rounded-xl transition-all duration-700"
+                onLoadingComplete={() => setImageLoaded(true)}
+                priority
+              />
+            </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="p-5 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2 leading-tight mb-2">
+                {product.title}
+              </h3>
+
+              <p className="text-sm text-gray-500 mb-3 line-clamp-2">
+                {product.description}
+              </p>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+                <span className="text-xs text-gray-800 uppercase tracking-wider font-medium">
+                  View Details
+                </span>
+                <div className="w-6 h-6 rounded-full bg-gray-200 group-hover:bg-gray-900 transition-all duration-300 flex items-center justify-center">
+                  <svg
+                    className="w-3 h-3 text-gray-800 group-hover:text-white transition-colors duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  // Product Grid Component
+  const ProductGrid = ({ products, emptyMessage }: { products: any[], emptyMessage: string }) => (
+    <>
+      {products.length === 0 ? (
+        <div className="text-center py-20">
+          <div className="text-gray-400 text-6xl mb-6">🔍</div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">No products found</h3>
+          <p className="text-gray-600 mb-8">{emptyMessage}</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
+    </>
+  )
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Header */}
-      <div className="bg-gray-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">All Products</h1>
-          <p className="text-gray-600">Discover our complete collection of premium lighting solutions</p>
+      <div className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 py-16">
+          <div className="text-center space-y-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 py-3 text-white leading-20">
+              Premium Lighting
+              <span className="block text-amber-400">Collection</span>
+            </h1>
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+              Discover our complete collection of premium lighting solutions
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Filters and Search */}
-      <div className="max-w-7xl mx-auto px-4 py-6">
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-          {/* Search */}
-          <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Search Section */}
+        <div className="mb-8">
+          <div className="relative">
+            <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
             <input
               type="text"
               placeholder="Search products..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+              className="w-full pl-16 pr-6 py-4 text-lg bg-white border-2 border-gray-200 rounded-2xl focus:border-gray-400 focus:outline-none transition-all duration-300"
             />
           </div>
+        </div>
 
+        {/* Tab Navigation */}
+        {/* <div className="mb-8">
+          <div className="flex justify-center">
+            <div className="inline-flex bg-gray-100 rounded-xl p-1">
+              <button
+                onClick={() => {
+                  setActiveTab('indoor')
+                  router.push('/products?tab=indoor')
+                }}
+                className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
+                  activeTab === 'indoor'
+                    ? 'bg-white shadow-sm text-gray-900'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Indoor Collection
+              </button>
+              <button
+                onClick={() => {
+                  setActiveTab('outdoor')
+                  router.push('/products?tab=outdoor')
+                }}
+                className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
+                  activeTab === 'outdoor'
+                    ? 'bg-white shadow-sm text-gray-900'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Outdoor Collection
+              </button>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Products Section */}
+        <div className="mb-6">
           {/* Category Filter */}
-          <div className="flex items-center space-x-2">
-            <Filter className="w-4 h-4 text-gray-400" />
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-            >
-              {categories.map(category => (
-                <option key={category} value={category}>{category}</option>
-              ))}
-            </select>
-          </div>
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                {activeTab === 'indoor' ? 'Indoor Lighting Solutions' : 'Outdoor Lighting Solutions'}
+              </h2>
+              <p className="text-gray-600">
+                Showing {filteredCurrentProducts.length} of {currentProducts.length} {activeTab} products
+              </p>
+            </div>
 
-          {/* Sort */}
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-          >
-            <option value="name">Sort by Name</option>
-            <option value="rating">Sort by Rating</option>
-          </select>
+            {/* <div className="relative">
+              <Filter className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="pl-12 pr-8 py-3 bg-white border-2 border-gray-200 rounded-xl focus:border-gray-400 focus:outline-none appearance-none cursor-pointer min-w-[200px]"
+              >
+                {getCategories(currentProducts).map(category => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </div> */}
+          </div>
         </div>
 
-        {/* Results Count */}
-        <div className="mt-4 text-sm text-gray-600">
-          Showing {filteredProducts.length} of {productsData.length} products
-        </div>
-      </div>
-
-      {/* Products Grid */}
-      <div className="max-w-7xl mx-auto px-4 pb-16">
-        {filteredProducts.length === 0 ? (
-          <div className="text-center py-12">
-            <h3 className="text-lg font-medium text-gray-900 mb-2">No products found</h3>
-            <p className="text-gray-600">Try adjusting your search or filter criteria</p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredProducts.map((product) => (
-              <div key={product.id} className="group cursor-pointer" onClick={() => handleProductClick(product.id)}>
-                <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden mb-4 group-hover:bg-gray-100 transition-colors duration-300 relative">
-                  <img
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.title}
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                  />
-
-                  {/* Stock Status */}
-                  <div className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full font-medium ${
-                    product.inStock ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                  }`}>
-                    {product.inStock ? 'In Stock' : 'Out of Stock'}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-sm font-medium text-gray-900 group-hover:text-gray-700 transition-colors duration-300 line-clamp-2">
-                    {product.title}
-                  </h3>
-                  
-                  {/* Rating */}
-                  <div className="flex items-center space-x-1">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          className={`w-3 h-3 ${i < Math.floor(product.rating) ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`} 
-                        />
-                      ))}
-                    </div>
-                    <span className="text-xs text-gray-600">({product.rating})</span>
-                  </div>
-                  
-                  {/* Category */}
-                  <p className="text-xs text-gray-500">{product.category}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <ProductGrid
+          products={filteredCurrentProducts}
+          emptyMessage={`Try adjusting your search terms or browse all ${activeTab} products`}
+        />
       </div>
     </div>
   )

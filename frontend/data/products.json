@@ -1,34 +1,5 @@
 [
-  {
-    "id": 1,
-    "title": "Nexus Series",
-    "description": "Premium LED downlight series with multiple power options and color variants. Features high-quality construction with various body colors and beam angles for versatile lighting solutions.",
-    "price": 45.99,
-    "originalPrice": 65.99,
-    "discount": 30,
-    "category": "Downlights",
-    "image": "/images/product details/IMG-20250903-WA0006.jpg",
-    "images": [
-      "/images/product details/IMG-20250903-WA0006.jpg"
-    ],
-    "rating": 4.8,
-    "reviews": 124,
-    "inStock": true,
-    "features": [
-      "Multiple power options (7W, 12W, 18W)",
-      "Various body colors available",
-      "Precise beam angles",
-      "High-quality chip technology",
-      "Easy installation"
-    ],
-    "specifications": {
-      "power": "7W-18W",
-      "bodyColor": "BK+GBK/RGD/GD/WH",
-      "chipSize": "13.5*13.5*11 mm",
-      "beamAngle": "24°-38°",
-      "warranty": "2 years"
-    }
-  },
+ 
   {
     "id": 2,
     "title": "Vintage Industrial Pendant Light",
@@ -283,38 +254,6 @@
       "diameter": "45cm",
       "height": "Adjustable 60-120cm",
       "warranty": "3 years"
-    }
-  },
-  {
-    "id": 10,
-    "title": "Modern Geometric Chandelier",
-    "description": "Contemporary geometric chandelier with clean lines and modern design. Features multiple light sources arranged in a geometric pattern for stunning visual appeal. Ideal for modern homes and offices.",
-    "price": 379.99,
-    "originalPrice": 499.99,
-    "discount": 24,
-    "category": "Modern Chandeliers",
-    "image": "/images/G 2.png",
-    "images": [
-      "/images/G 2.png",
-      "/images/G3.png",
-      "/images/D3.png"
-    ],
-    "rating": 4.7,
-    "reviews": 189,
-    "inStock": true,
-    "features": [
-      "Geometric design",
-      "Multiple light sources",
-      "LED technology",
-      "Remote control",
-      "Easy installation"
-    ],
-    "specifications": {
-      "power": "90W total",
-      "material": "Aluminum + Glass",
-      "diameter": "70cm",
-      "height": "85cm",
-      "warranty": "2 years"
     }
   },
   {

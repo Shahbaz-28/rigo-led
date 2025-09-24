@@ -1,8 +1,8 @@
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
 import TrendingSection from "@/components/trending-section"
+import LEDSolutionsSection from "@/components/led-solutions-section"
 import PromotionalSection from "@/components/promotional-section"
-import Footer from "@/components/footer"
 import WhyChooseUs from "@/components/why-choose-us"
 import CardParallaxSection from "@/components/card-parallax-section"
 
@@ -11,6 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <HeroSection />
       <TrendingSection />
+      <LEDSolutionsSection />
       <CardParallaxSection />
       <PromotionalSection />
       <WhyChooseUs />

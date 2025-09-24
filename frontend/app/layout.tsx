@@ -1,14 +1,8 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { GeistSans, GeistMono } from 'geist/font'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins',
-})
 
 export const metadata: Metadata = {
   title: 'Rigo',
@@ -23,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${poppins.variable}`}>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} overflow-x-hidden`}>
         <Navbar/>
+        <div className="mb-[80px]">
+        </div>
         {children}
         <Footer/>
       </body>

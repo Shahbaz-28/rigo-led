@@ -2,7 +2,7 @@
 
 import { Menu, X, ChevronDown } from "lucide-react"
 import { FaWhatsapp, FaInstagram } from "react-icons/fa"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -11,121 +11,168 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false)
 
+  // Optimized scroll handler with throttling
+  const handleScroll = useCallback(() => {
+    const scrollY = window.scrollY
+    setIsScrolled(scrollY > 10)
+  }, [])
+
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
+    let ticking = false
+
+    const optimizedScrollHandler = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll()
+          ticking = false
+        })
+        ticking = true
+      }
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener("scroll", optimizedScrollHandler, { passive: true })
+    return () => window.removeEventListener("scroll", optimizedScrollHandler)
+  }, [handleScroll])
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (isProductsDropdownOpen) {
         const target = event.target as Element
-        if (!target.closest('[data-dropdown]')) {
+        if (!target.closest("[data-dropdown]")) {
           setIsProductsDropdownOpen(false)
         }
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside, { passive: true })
+    return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [isProductsDropdownOpen])
 
-  // Prevent body scroll when menu is open
+  // Prevent body scroll when menu is open and add overflow-x-hidden
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden"
+      document.body.style.overflowX = "hidden"
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = "unset"
+      document.body.style.overflowX = "hidden" // Keep x-overflow hidden always
+    }
+
+    return () => {
+      document.body.style.overflow = "unset"
+      document.body.style.overflowX = "hidden" // Keep x-overflow hidden always
     }
   }, [isMenuOpen])
 
+  // Close mobile menu when clicking on links
+  const handleLinkClick = () => {
+    setIsMenuOpen(false)
+    setIsProductsDropdownOpen(false)
+  }
+
   return (
-    <header className={`${isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-md' : ''} bg-white border-b border-gray-100 transition-all duration-300`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+    <header
+      className={`fixed top-0 left-0 right-0 z-[9999] bg-background border-b border-border ${isScrolled ? "shadow-sm" : "shadow-none"} min-h-[80px] flex justify-center items-center`}
+    >
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <Image 
-                src="/images/logo.png" 
-                alt="RIGO Logo" 
-                width={120}
-                height={50}
-                className="h-10 sm:h-12 lg:h-14 w-auto"
+          <div className="flex-shrink-0 transform transition-transform duration-200 hover:scale-105">
+            <Link href="/" onClick={handleLinkClick}>
+              <Image
+                src="/images/logo.png"
+                alt="RIGO Logo"
+                width={100}
+                height={40}
+                className="h-8 sm:h-10 lg:h-12 w-auto"
                 priority
               />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <Link
+              href="/"
+              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+              onClick={handleLinkClick}
+            >
               HOME
+              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span> */}
             </Link>
-            
+
             {/* Products Dropdown */}
             <div className="relative" data-dropdown>
               <button
                 onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
-                className="flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
+                className="flex items-center text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200 group"
               >
                 All Products
-                <ChevronDown className="ml-1 h-4 w-4" />
+                <ChevronDown
+                  className={`ml-1 h-4 w-4 transition-transform duration-200 ${isProductsDropdownOpen ? "rotate-180" : ""}`}
+                />
               </button>
-              
+
               {/* Dropdown Menu */}
-              {isProductsDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
-                  <div className="py-2">
-                    <Link
-                      href="/products?tab=indoor"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
-                      onClick={() => setIsProductsDropdownOpen(false)}
-                    >
-                      Indoor Products
-                    </Link>
-                    <Link
-                      href="/products?tab=outdoor"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
-                      onClick={() => setIsProductsDropdownOpen(false)}
-                    >
-                      Outdoor Products
-                    </Link>
-                  </div>
+              <div
+                className={`absolute top-full left-0 mt-2 w-48 bg-card/95 backdrop-blur-md rounded-xl shadow-xl border border-border z-[10000] transition-all duration-300 origin-top ${isProductsDropdownOpen
+                    ? "opacity-100 scale-100 translate-y-0"
+                    : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                  }`}
+              >
+                <div className="py-2">
+                  <Link
+                    href="/products?tab=indoor"
+                    className="block px-4 py-3 text-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors duration-150 rounded-lg mx-2"
+                    onClick={handleLinkClick}
+                  >
+                    Indoor Products
+                  </Link>
+                  <Link
+                    href="/products?tab=outdoor"
+                    className="block px-4 py-3 text-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors duration-150 rounded-lg mx-2"
+                    onClick={handleLinkClick}
+                  >
+                    Outdoor Products
+                  </Link>
                 </div>
-              )}
+              </div>
             </div>
-            
-            <a href="#about" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
+
+            <a
+              href="/about"
+              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200"
+              onClick={handleLinkClick}
+            >
               About Us
             </a>
-            <a href="#contact" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">
+            <a
+              href="/contact"
+              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200"
+              onClick={handleLinkClick}
+            >
               Contact
             </a>
           </nav>
 
-          {/* Desktop Icons - WhatsApp and Instagram only */}
-          <div className="hidden sm:flex items-center space-x-4">
-            <a 
-              href="https://wa.me/your-number" 
-              target="_blank" 
+          {/* Desktop Icons */}
+          <div className="hidden md:flex items-center">
+            <a
+              href="https://wa.me/your-number"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 hover:text-green-700 transition-colors"
+              className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaWhatsapp className="w-5 h-5" />
+              <FaWhatsapp className="w-6 h-6" aria-label="WhatsApp" />
             </a>
-            <a 
-              href="https://instagram.com/your-handle" 
-              target="_blank" 
+            <a
+              href="https://instagram.com/your-handle"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-pink-600 hover:text-pink-700 transition-colors"
+              className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaInstagram className="w-5 h-5" />
+              <FaInstagram className="w-6 h-6" aria-label="Instagram" />
             </a>
           </div>
 
@@ -133,71 +180,76 @@ export default function Navbar() {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-gray-700 hover:text-gray-900 transition-colors"
+              className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200 z-[10001]"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Navigation - Slides from right */}
-      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex flex-col h-full">
-          {/* Header with close button */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="text-lg font-semibold text-gray-900">Menu</h2>
+      {/* Mobile Navigation */}
+      <div
+        id="mobile-menu"
+        className={`lg:hidden fixed inset-0 w-full h-full bg-background shadow-2xl transform transition-transform duration-300 ease-out z-[999999] ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+      >
+        <div className="flex flex-col h-full min-h-screen bg-background">
+          {/* Header */}
+          <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
+            <h2 className="text-lg font-semibold text-foreground">Menu</h2>
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="p-2 text-gray-700 hover:text-gray-900 transition-colors"
+              className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              aria-label="Close menu"
             >
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5" />
             </button>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex-1 px-6 py-4 space-y-4">
-            <Link 
-              href="/" 
-              className="block py-3 text-base font-medium text-gray-900 hover:text-gray-600 border-b border-gray-100"
+          <div className="flex-1 px-4 py-4 space-y-2 overflow-y-auto">
+            <Link
+              href="/"
+              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               HOME
             </Link>
-            
+
             {/* Products Section */}
-            <div className="border-b border-gray-100">
-              <div className="py-3 text-base font-medium text-gray-900">
-                All Products
-              </div>
-              <div className="pl-4 space-y-2">
-                <Link 
-                  href="/products?tab=indoor" 
-                  className="block py-2 text-sm text-gray-700 hover:text-gray-600"
+            <div className="border border-border rounded-lg overflow-hidden">
+              <div className="py-3 px-4 text-base font-medium text-foreground bg-muted">All Products</div>
+              <div className="bg-background">
+                <Link
+                  href="/products?tab=indoor"
+                  className="block py-3 px-6 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Indoor Products
                 </Link>
-                <Link 
-                  href="/products?tab=outdoor" 
-                  className="block py-2 text-sm text-gray-700 hover:text-gray-600"
+                <Link
+                  href="/products?tab=outdoor"
+                  className="block py-3 px-6 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Outdoor Products
                 </Link>
               </div>
             </div>
-            
-            <a 
-              href="#about" 
-              className="block py-3 text-base font-medium text-gray-900 hover:text-gray-600 border-b border-gray-100"
+
+            <a
+              href="/about"
+              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </a>
-            <a 
-              href="#contact" 
-              className="block py-3 text-base font-medium text-gray-900 hover:text-gray-600 border-b border-gray-100"
+            <a
+              href="/contact"
+              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
@@ -205,21 +257,38 @@ export default function Navbar() {
           </div>
 
           {/* Social Icons */}
-          <div className="p-6 border-t border-gray-200">
-            <div className="flex items-center space-x-4">
-              <a 
-                href="https://wa.me/your-number" 
-                target="_blank" 
+          <div className="p-4 border-t border-border flex-shrink-0 flex justify-between items-center">
+            {/* Logo */}
+            <div className="flex items-center justify-center mb-4">
+              <Link href="/" onClick={handleLinkClick}>
+                <Image
+                  src="/images/logo.png"
+                  alt="RIGO Logo"
+                  width={100}
+                  height={40}
+                  className="h-8 sm:h-10 lg:h-12 w-auto"
+                  priority
+                />
+              </Link>
+            </div>
+
+            {/* Icons */}
+            <div className="flex items-center justify-center space">
+              <a
+                href="https://wa.me/your-number"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-700 transition-colors"
+                className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                aria-label="WhatsApp"
               >
                 <FaWhatsapp className="w-6 h-6" />
               </a>
-              <a 
-                href="https://instagram.com/your-handle" 
-                target="_blank" 
+              <a
+                href="https://instagram.com/your-handle"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-700 transition-colors"
+                className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                aria-label="Instagram"
               >
                 <FaInstagram className="w-6 h-6" />
               </a>
@@ -227,14 +296,13 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
       {/* Overlay */}
-      {isMenuOpen && (
-        <div 
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+      {/* {isMenuOpen && (
+        <div
+          className="lg:hidden fixed inset-0 min-h-screen bg-black/50 backdrop-blur-sm z-[999] transition-opacity duration-300"
           onClick={() => setIsMenuOpen(false)}
-        />
-      )}
+        /> */}{" "}
+      {/* )} */}
     </header>
   )
 }

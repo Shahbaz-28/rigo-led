@@ -1,860 +1,136 @@
 {
-    "lighting_products": [
-      {
-        "series_name": "Nexus Series",
-        "image_path": "images/products/Nexus Series (1).png",
-        "images": [
-          "images/products/Nexus Series (1).png",
-          "images/products/Nexus Series (2).png",
-          "images/products/Nexus Series (3).png",
-          "images/products/Nexus Series (4).png"
-        ],
-        "specifications": {
-          "item_code": "W1.CB15",
-          "watt": "7W / 12W / 18W",
-          "reflector_color": "AB / GB / RG / MW / SB",
-          "body_color": "Golden / Silver / White",
-          "beam_angle": "24° / 38°",
-          "dimension": "63*63*43 / 80*80*44 / 94*84*51",
-          "cutout": "55MM / 75MM / 85MM",
-          "chip_size": "13.5*13.5*11 mm"
-        }
-      },
-      {
-        "series_name": "Platina Series",
-        "image_path": "images/products/platina series (1).png",
-        "images": [
-          "images/products/platina series (1).png",
-          "images/products/platina series (2).png",
-          "images/products/platina series (3).png",
-          "images/products/platina series (4).png"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "PL-7W",
-              "power": "7W",
-              "size": "Φ65*H55 mm",
-              "cut_out": "Φ60 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "PL-12W",
-              "power": "12W",
-              "size": "Φ80*H65 mm",
-              "cut_out": "Φ75 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "PL-18W",
-              "power": "18W",
-              "size": "Φ95*H75 mm",
-              "cut_out": "Φ90 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Vela Series",
-        "image_path": "images/products/vela series (1).png",
-        "images": [
-          "images/products/vela series (1).png",
-          "images/products/vela series (2).png"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "VL-7W",
-              "power": "7W",
-              "size": "Φ70*H60 mm",
-              "cut_out": "Φ65 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "VL-12W",
-              "power": "12W",
-              "size": "Φ85*H70 mm",
-              "cut_out": "Φ80 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "VL-18W",
-              "power": "18W",
-              "size": "Φ100*H80 mm",
-              "cut_out": "Φ95 mm",
-              "body_color": "WHITE/BLACK",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "SURFA CYLINDI COBLIGHT",
-        "image_path": "IMG-20250903-WA0007.jpg",
-        "images": [
-          "IMG-20250903-WA0007.jpg"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB05-7W",
-              "power": "7W",
-              "body_color": "BK+GBK/RGD/GD/CH",
-              "dimension": "Φ60*70 mm",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB05-12W",
-              "power": "12W",
-              "body_color": "BK+GBK/RGD/GD/CH",
-              "dimension": "Φ73*85 mm",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB05-18W",
-              "power": "18W",
-              "body_color": "BK+GBK/RGD/GD/CH",
-              "dimension": "Φ87*100 mm",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Signu Series",
-        "image_path": "IMG-20250903-WA0008.jpg",
-        "images": [
-          "IMG-20250903-WA0008.jpg"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB11-3W",
-              "power": "3W",
-              "size": "Φ63*H37 mm",
-              "cut_out": "Φ62 mm",
-              "chip_size": "13.5*13.5*1 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB11-6W",
-              "power": "6W",
-              "size": "Φ65*H52 mm",
-              "cut_out": "Φ78 mm",
-              "chip_size": "13.5*13.5*1 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB11-9W",
-              "power": "9W",
-              "size": "Φ65*H52 mm",
-              "cut_out": "Φ76 mm",
-              "chip_size": "13.5*13.5*1 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB11-16W",
-              "power": "16W",
-              "size": "Φ105*H60 mm",
-              "cut_out": "Φ94 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "55°"
-            },
-            {
-              "item_no": "WLCB11-24W",
-              "power": "24W",
-              "size": "Φ135*H73 mm",
-              "cut_out": "Φ119 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "55°"
-            },
-            {
-              "item_no": "WLCB11-30W",
-              "power": "30W",
-              "size": "Φ154*H86 mm",
-              "cut_out": "Φ130 mm",
-              "chip_size": "28*28*24.5 mm",
-              "beam_angle": "55°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Rainbow Series",
-        "image_path": "images/products/rainbow series (1).png",
-        "images": [
-          "images/products/rainbow series (1).png",
-          "images/products/rainbow series (2).png",
-          "images/products/rainbow series (3).png",
-          "images/products/rainbow series (4).png"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "SL-3+3W-RD",
-              "power": "3+3W",
-              "size": "Φ105*H25 mm",
-              "cut_out_size": "Φ90 mm",
-              "pcb_1": "173*6 15D mm",
-              "pcb_2": "208*6 30D mm"
-            },
-            {
-              "item_no": "SL-6+3W-RD",
-              "power": "6+3W",
-              "size": "Φ145*H25 mm",
-              "cut_out_size": "Φ120 mm",
-              "pcb_1": "286*6 30D mm",
-              "pcb_2": "321*6 30D mm"
-            },
-            {
-              "item_no": "SL-12+4W-RD",
-              "power": "12+4W",
-              "size": "Φ195*H25 mm",
-              "cut_out_size": "Φ160 mm",
-              "pcb_1": "438*6 60D mm",
-              "pcb_2": "471*6 40D mm"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Foxia Pro 1 Series",
-        "image_path": "IMG-20250903-WA0010.jpg",
-        "images": [
-          "IMG-20250903-WA0010.jpg"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB17-7W",
-              "power": "7W",
-              "dimension": "Φ68*H66 mm",
-              "cut_out": "Φ60 mm",
-              "body_color": "WHITE/BLACK",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB17-12W",
-              "power": "12W",
-              "dimension": "Φ83*H75 mm",
-              "cut_out": "Φ75 mm",
-              "body_color": "WHITE/BLACK",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB17-18W",
-              "power": "18W",
-              "dimension": "Φ93*H85 mm",
-              "cut_out": "Φ85 mm",
-              "body_color": "WHITE/BLACK",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Foxia Snics",
-        "image_path": "IMG-20250903-WA0012.jpg",
-        "images": [
-          "IMG-20250903-WA0012.jpg"
-        ],
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB18-7W",
-              "power": "7W",
-              "dimension": "Φ68*H40 mm",
-              "cut_out": "Φ60 mm",
-              "body_color": "BK+GBK/WH/RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB18-12W",
-              "power": "12W",
-              "dimension": "Φ83*H75 mm",
-              "cut_out": "Φ75 mm",
-              "body_color": "BK+GBK/WH/RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB18-18W",
-              "power": "18W",
-              "dimension": "Φ93*H59 mm",
-              "cut_out": "Φ83 mm",
-              "body_color": "BK+GBK/WH/RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "LUMI Series",
-        "image_path": "IMG-20250903-WA0014.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB12-7W",
-              "power": "7W",
-              "dimension": "Φ64*H75 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB12-12W",
-              "power": "12W",
-              "dimension": "Φ75*H90 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB12-18W",
-              "power": "18W",
-              "dimension": "Φ85*H105 mm",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Delia Series",
-        "image_path": "IMG-20250903-WA0014.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB13-7W",
-              "power": "7W",
-              "dimension": "Φ65*H45 mm",
-              "cut_out": "Φ55 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB13-12W",
-              "power": "12W",
-              "dimension": "Φ85*H45 mm",
-              "cut_out": "Φ75 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB13-18W",
-              "power": "18W",
-              "dimension": "Φ105*H59 mm",
-              "cut_out": "Φ95 mm",
-              "beam_angle": "38°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Croton Series",
-        "image_path": "IMG-20250903-WA0015.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "7W",
-              "outer_size": "60X75 mm",
-              "cutout_size": "55 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "power": "12W",
-              "outer_size": "70X75 mm",
-              "cutout_size": "65 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "power": "18W",
-              "outer_size": "83X85 mm",
-              "cutout_size": "78 mm",
-              "beam_angle": "38°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Snow Series",
-        "image_path": "IMG-20250903-WA0016.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "7W",
-              "outer_size": "53X61 mm",
-              "cutout_size": "45 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "power": "12W",
-              "outer_size": "63X71 mm",
-              "cutout_size": "55 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "power": "18W",
-              "outer_size": "83X83 mm",
-              "cutout_size": "75 mm",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Pro Series",
-        "image_path": "IMG-20250903-WA0017.jpg",
-        "specifications": {
-          "track_items": [
-            {
-              "item_no": "WL TRACK",
-              "length": "1 Metre",
-              "width": "34 mm",
-              "body_color": "WHITE/BLACK"
-            },
-            {
-              "item_no": "WL TRACK",
-              "length": "2 Metre",
-              "width": "34 mm",
-              "body_color": "WHITE/BLACK"
-            }
-          ],
-          "smps_items": [
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "2A/12V",
-              "wattage": "24W",
-              "dimension": "95*35*23 mm"
-            },
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "5A/12V",
-              "wattage": "60W",
-              "dimension": "130*32*23 mm"
-            },
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "10A/12V",
-              "wattage": "100W",
-              "dimension": "138*50*23 mm"
-            },
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "16.7A/12V",
-              "wattage": "200W",
-              "dimension": "178*50*23 mm"
-            },
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "25A/12V",
-              "wattage": "300W",
-              "dimension": "204*50*23 mm"
-            },
-            {
-              "item_no": "WL SMPS",
-              "output_voltage": "33.3A/12V",
-              "wattage": "400W",
-              "dimension": "238*50*23 mm"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Blaze Series",
-        "image_path": "IMG-20250903-WA0018.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB06-10W",
-              "power": "10W",
-              "body_color": "BK/WH",
-              "dimension": "Φ50*125 mm",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB06-20W",
-              "power": "20W",
-              "body_color": "BK/WH",
-              "dimension": "Φ65*150 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB06-30W",
-              "power": "30W",
-              "body_color": "BK/WH",
-              "dimension": "Φ75*180 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB07-10W",
-              "power": "10W",
-              "body_color": "BK/WH",
-              "dimension": "Φ50*125 mm",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB07-20W",
-              "power": "20W",
-              "body_color": "BK/WH",
-              "dimension": "Φ65*150 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "item_no": "WLCB07-30W",
-              "power": "30W",
-              "body_color": "BK/WH",
-              "dimension": "Φ75*180 mm",
-              "chip_size": "19*19*17 mm",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Vibe Series",
-        "image_path": "IMG-20250903-WA0018.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB08-3W",
-              "power": "3W",
-              "size": "Φ38*28 mm",
-              "cut_out": "Φ28 mm",
-              "body_color": "WH",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB08-3W",
-              "power": "3W",
-              "size": "Φ38*28 mm",
-              "cut_out": "Φ28 mm",
-              "body_color": "BK",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB08-3W",
-              "power": "3W",
-              "size": "Φ38*28 mm",
-              "cut_out": "Φ28 mm",
-              "body_color": "RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            },
-            {
-              "item_no": "WLCB08-3W",
-              "power": "3W",
-              "size": "Φ38*28 mm",
-              "cut_out": "Φ28 mm",
-              "body_color": "NICKEL",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "38°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Olive Series",
-        "image_path": "IMG-20250903-WA0019.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLDL20-12W",
-              "power": "12W",
-              "dimension": "Φ115*H45 mm",
-              "cut_out": "Φ95 mm",
-              "body_color": "WHITE"
-            },
-            {
-              "item_no": "WLDL20-18W",
-              "power": "18W",
-              "dimension": "Φ145*H45 mm",
-              "cut_out": "Φ130 mm",
-              "body_color": "WHITE"
-            },
-            {
-              "item_no": "WLDL20-24W",
-              "power": "24W",
-              "dimension": "Φ165*H45 mm",
-              "cut_out": "Φ155 mm",
-              "body_color": "WHITE"
-            },
-            {
-              "item_no": "WLDL20-32W",
-              "power": "32W",
-              "dimension": "Φ215*H45 mm",
-              "cut_out": "Φ205 mm",
-              "body_color": "WHITE"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Deco Series",
-        "image_path": "IMG-20250903-WA0020.jpg",
-        "specifications": {
-          "round_items": [
-            {
-              "item_no": "SL-RD-3W",
-              "power": "3W",
-              "size": "Φ90 mm",
-              "cut_out": "Φ70 mm",
-              "pcb_size": "179°6 mm",
-              "lgp_size": "Φ56 mm"
-            },
-            {
-              "item_no": "SL-RD-6W/8W",
-              "power": "6W/8W",
-              "size": "Φ120 mm",
-              "cut_out": "Φ105 mm",
-              "pcb_size": "289°6 mm",
-              "lgp_size": "Φ90 mm"
-            },
-            {
-              "item_no": "SL-RD-9W",
-              "power": "9W",
-              "size": "Φ145 mm",
-              "cut_out": "Φ130 mm",
-              "pcb_size": "366°6 mm",
-              "lgp_size": "Φ115 mm"
-            },
-            {
-              "item_no": "SL-RD-12W/15W",
-              "power": "12W/15W",
-              "size": "Φ170 mm",
-              "cut_out": "Φ155 mm",
-              "pcb_size": "438°6 mm",
-              "lgp_size": "Φ138 mm"
-            },
-            {
-              "item_no": "SL-RD-15W",
-              "power": "15W",
-              "size": "Φ190 mm",
-              "cut_out": "Φ170 mm",
-              "pcb_size": "500°6 mm",
-              "lgp_size": "Φ157 mm"
-            },
-            {
-              "item_no": "SL-RD-18W/22W",
-              "power": "18W/22W",
-              "size": "Φ225 mm",
-              "cut_out": "Φ205 mm",
-              "pcb_size": "591°6 mm",
-              "lgp_size": "Φ187 mm"
-            },
-            {
-              "item_no": "SL-RD-24W/30W",
-              "power": "24W/30W",
-              "size": "Φ300 mm",
-              "cut_out": "Φ285 mm",
-              "pcb_size": "414°6*2 mm",
-              "lgp_size": "Φ262 mm"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Fusion Series",
-        "image_path": "IMG-20250903-WA0021.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLCB09-7W",
-              "power": "7W",
-              "size": "Φ70*50 mm",
-              "cut_out": "Φ65 mm",
-              "body_color": "BK+RGD, BK+GBK, WH+GBK, WH+RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB09-12W",
-              "power": "12W",
-              "size": "Φ85*65 mm",
-              "cut_out": "Φ80 mm",
-              "body_color": "BK+RGD, BK+GBK, WH+GBK, WH+RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            },
-            {
-              "item_no": "WLCB09-16W",
-              "power": "16W",
-              "size": "Φ95*75 mm",
-              "cut_out": "Φ90 mm",
-              "body_color": "BK+RGD, BK+GBK, WH+GBK, WH+RGD",
-              "chip_size": "13.5*13.5*11 mm",
-              "beam_angle": "24°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Prima Series",
-        "image_path": "IMG-20250903-WA0021.jpg",
-        "specifications": {
-          "items": [
-            {
-              "item_no": "WLDT10-12W-RD",
-              "power": "12W",
-              "size": "Φ120 mm",
-              "cut_out_size": "Φ115 mm",
-              "mcpcb": "70 mm"
-            },
-            {
-              "item_no": "WLDT10-18W-RD",
-              "power": "18W",
-              "size": "Φ155 mm",
-              "cut_out_size": "Φ145 mm",
-              "mcpcb": "98 mm"
-            },
-            {
-              "item_no": "WLDT10-24W-RD",
-              "power": "24W",
-              "size": "Φ175 mm",
-              "cut_out_size": "Φ165 mm",
-              "mcpcb": "114 mm"
-            },
-            {
-              "item_no": "WLDT10-12W-SQ",
-              "power": "12W",
-              "size": "110*110 mm",
-              "cut_out_size": "105*105 mm",
-              "mcpcb": "70*70 mm"
-            },
-            {
-              "item_no": "WLDT10-16W-SQ",
-              "power": "16W",
-              "size": "145*145 mm",
-              "cut_out_size": "135*135 mm",
-              "mcpcb": "98*98 mm"
-            },
-            {
-              "item_no": "WLDT10-24W-SQ",
-              "power": "24W",
-              "size": "170*170 mm",
-              "cut_out_size": "160*160 mm",
-              "mcpcb": "114*114 mm"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Nexa Series",
-        "image_path": "IMG-20250903-WA0023.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "6W",
-              "outer_size": "95X45X49 mm",
-              "cutout_size": "85X37 mm",
-              "beam_angle": "30°"
-            },
-            {
-              "power": "12W",
-              "outer_size": "147X45X49 mm",
-              "cutout_size": "140X37 mm",
-              "beam_angle": "30°"
-            },
-            {
-              "power": "24W",
-              "outer_size": "280X45X49 mm",
-              "cutout_size": "273X37 mm",
-              "beam_angle": "30°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "JASER BLAUE LINER LIGHT",
-        "image_path": "IMG-20250903-WA0024.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "6W",
-              "outer_size": "97x45x43 mm",
-              "cutout_size": "91x35 mm",
-              "beam_angle": "36°"
-            },
-            {
-              "power": "12W",
-              "outer_size": "154x45x43 mm",
-              "cutout_size": "148x35 mm",
-              "beam_angle": "36°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Street Light",
-        "image_path": "IMG-20250907-WA0008.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "24W",
-              "outer_size": "100X270 mm",
-              "weight": "0.230 kg",
-              "beam_angle": "120°"
-            },
-            {
-              "power": "35W",
-              "outer_size": "130X300 mm",
-              "weight": "0.370 kg",
-              "beam_angle": "120°"
-            },
-            {
-              "power": "50W",
-              "outer_size": "158X330 mm",
-              "weight": "0.480 kg",
-              "beam_angle": "120°"
-            }
-          ]
-        }
-      },
-      {
-        "series_name": "Flood Light",
-        "image_path": "IMG-20250907-WA0009.jpg",
-        "specifications": {
-          "items": [
-            {
-              "power": "50W",
-              "outer_size": "223X220X250 mm",
-              "weight": "1.130 kg",
-              "beam_angle": "120°"
-            },
-            {
-              "power": "100W",
-              "outer_size": "285X275X50 mm",
-              "weight": "1.708 kg",
-              "beam_angle": "120°"
-            },
-            {
-              "power": "150W",
-              "outer_size": "288X245X60 mm",
-              "weight": "1.550 kg",
-              "beam_angle": "120°"
-            },
-            {
-              "power": "200W",
-              "outer_size": "320X425X60 mm",
-              "weight": "3.850 kg",
-              "beam_angle": "120°"
-            }
-          ]
-        }
+  "lighting_products": [
+    {
+      "series_name": "Nexus Series",
+      "image_path": "images/products/Nexus Series (1).png",
+      "images": [
+        "images/products/Nexus Series (1).png",
+        "images/products/Nexus Series (2).png",
+        "images/products/Nexus Series (3).png",
+        "images/products/Nexus Series (4).png"
+      ],
+      "specifications": {
+        "item_code": "W1.CB15",
+        "watt": "7W / 12W / 18W",
+        "reflector_color": "AB / GB / RG / MW / SB",
+        "body_color": "Golden / Silver / White",
+        "beam_angle": "24° / 38°",
+        "dimension": "63*63*43 / 80*80*44 / 94*84*51",
+        "cutout": "55MM / 75MM / 85MM",
+        "chip_size": "13.5*13.5*11 mm"
       }
-    ]
-  }
+    },
+    {
+      "series_name": "Platina Series",
+      "image_path": "images/products/platina series (1).png",
+      "images": [
+        "images/products/platina series (1).png",
+        "images/products/platina series (2).png",
+        "images/products/platina series (3).png",
+        "images/products/platina series (4).png"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "item_no": "PL-7W",
+            "power": "7W",
+            "size": "Φ65*H55 mm",
+            "cut_out": "Φ60 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "PL-12W",
+            "power": "12W",
+            "size": "Φ80*H65 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "36°"
+          },
+          {
+            "item_no": "PL-18W",
+            "power": "18W",
+            "size": "Φ95*H75 mm",
+            "cut_out": "Φ90 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "36°"
+          }
+        ]
+      }
+    },
+    {
+      "series_name": "Rainbow Series",
+      "image_path": "images/products/rainbow series (1).png",
+      "images": [
+        "images/products/rainbow series (1).png",
+        "images/products/rainbow series (2).png",
+        "images/products/rainbow series (3).png",
+        "images/products/rainbow series (4).png"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "item_no": "SL-3+3W-RD",
+            "power": "3+3W",
+            "size": "Φ105*H25 mm",
+            "cut_out_size": "Φ90 mm",
+            "pcb_1": "173*6 15D mm",
+            "pcb_2": "208*6 30D mm"
+          },
+          {
+            "item_no": "SL-6+3W-RD",
+            "power": "6+3W",
+            "size": "Φ145*H25 mm",
+            "cut_out_size": "Φ120 mm",
+            "pcb_1": "286*6 30D mm",
+            "pcb_2": "321*6 30D mm"
+          },
+          {
+            "item_no": "SL-12+4W-RD",
+            "power": "12+4W",
+            "size": "Φ195*H25 mm",
+            "cut_out_size": "Φ160 mm",
+            "pcb_1": "438*6 60D mm",
+            "pcb_2": "471*6 40D mm"
+          }
+        ]
+      }
+    },
+    {
+      "series_name": "Vela Series",
+      "image_path": "images/products/vela series (1).png",
+      "images": [
+        "images/products/vela series (1).png",
+        "images/products/vela series (2).png"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "item_no": "VL-7W",
+            "power": "7W",
+            "size": "Φ70*H60 mm",
+            "cut_out": "Φ65 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "VL-12W",
+            "power": "12W",
+            "size": "Φ85*H70 mm",
+            "cut_out": "Φ80 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "36°"
+          },
+          {
+            "item_no": "VL-18W",
+            "power": "18W",
+            "size": "Φ100*H80 mm",
+            "cut_out": "Φ95 mm",
+            "body_color": "WHITE/BLACK",
+            "beam_angle": "36°"
+          }
+        ]
+      }
+    }
+  ]
+}
