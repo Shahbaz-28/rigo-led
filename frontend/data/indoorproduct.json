@@ -12,7 +12,7 @@
       "specifications": {
         "items": [
           {
-            "item_no": "W1.CB15-7W",
+            "item_no": "RL.CB15-7W",
             "power": "7W",
             "size": "Φ62*H59 mm",
             "cut_out": "Φ55 mm",
@@ -21,7 +21,7 @@
             "beam_angle": "24°"
           },
           {
-            "item_no": "W1.CB15-12W",
+            "item_no": "RL.CB15-12W",
             "power": "12W",
             "size": "Φ85*H64 mm",
             "cut_out": "Φ75 mm",
@@ -30,7 +30,7 @@
             "beam_angle": "38°"
           },
           {
-            "item_no": "W1.CB15-18W",
+            "item_no": "RL.CB15-18W",
             "power": "18W",
             "size": "Φ105*H72 mm",
             "cut_out": "Φ95 mm",
@@ -38,7 +38,8 @@
             "chip_size": "13.5*13.5*11 mm",
             "beam_angle": "38°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -76,7 +77,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -112,7 +114,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -156,7 +159,8 @@
             "pcb_1": "438*6 60D mm",
             "pcb_2": "471*6 40D mm"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     }
 

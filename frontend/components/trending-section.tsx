@@ -109,6 +109,8 @@ export default function TrendingSection() {
               {product.description}
             </p>
 
+            
+
             {/* Action Indicator */}
             <div className="flex items-center justify-between pt-2">
               <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">

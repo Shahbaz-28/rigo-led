@@ -10,14 +10,15 @@
         "images/products/Nexus Series (4).png"
       ],
       "specifications": {
-        "item_code": "W1.CB15",
+        "item_code": "RL.CB15",
         "watt": "7W / 12W / 18W",
         "reflector_color": "AB / GB / RG / MW / SB",
         "body_color": "Golden / Silver / White",
         "beam_angle": "24° / 38°",
         "dimension": "63*63*43 / 80*80*44 / 94*84*51",
         "cutout": "55MM / 75MM / 85MM",
-        "chip_size": "13.5*13.5*11 mm"
+        "chip_size": "13.5*13.5*11 mm",
+        "warranty": "2 years"
       }
     },
     {
@@ -55,7 +56,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -93,7 +95,8 @@
             "pcb_1": "438*6 60D mm",
             "pcb_2": "471*6 40D mm"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -129,7 +132,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     }
   ]

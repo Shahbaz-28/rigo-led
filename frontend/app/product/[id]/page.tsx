@@ -262,6 +262,20 @@ export default function ProductDetails() {
                           </div>
                         </div>
                       ))}
+
+                      {/* Render top-level specs like warranty when items array exists */}
+                      <div className="grid grid-cols-1 gap-3">
+                        {Object.entries(product.specifications).map(([key, value]) => {
+                          if (!value || key === 'items') return null
+                          const label = key.replace(/_/g, ' ').toUpperCase()
+                          return (
+                            <div key={key} className="flex justify-between py-2 border-b border-gray-100 last:border-b-0">
+                              <span className="text-gray-600 font-medium">{label}:</span>
+                              <span className="text-gray-900">{value}</span>
+                            </div>
+                          )
+                        })}
+                      </div>
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 gap-3">

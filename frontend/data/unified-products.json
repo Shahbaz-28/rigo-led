@@ -30,7 +30,7 @@
       "specifications": {
         "items": [
           {
-            "item_no": "W1.CB15-7W",
+            "item_no": "RL.CB15-7W",
             "power": "7W",
             "size": "Φ62*H59 mm",
             "cut_out": "Φ55 mm",
@@ -39,7 +39,7 @@
             "beam_angle": "24°"
           },
           {
-            "item_no": "W1.CB15-12W",
+            "item_no": "RL.CB15-12W",
             "power": "12W",
             "size": "Φ85*H64 mm",
             "cut_out": "Φ75 mm",
@@ -48,7 +48,7 @@
             "beam_angle": "38°"
           },
           {
-            "item_no": "W1.CB15-18W",
+            "item_no": "RL.CB15-18W",
             "power": "18W",
             "size": "Φ105*H72 mm",
             "cut_out": "Φ95 mm",
@@ -56,7 +56,8 @@
             "chip_size": "13.5*13.5*11 mm",
             "beam_angle": "38°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -112,7 +113,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -174,7 +176,8 @@
             "pcb_1": "438*6 60D mm",
             "pcb_2": "471*6 40D mm"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -228,7 +231,8 @@
             "body_color": "WHITE/BLACK",
             "beam_angle": "36°"
           }
-        ]
+        ],
+        "warranty": "2 years"
       }
     },
     {
@@ -266,7 +270,8 @@
         "pcb_size": "165 x 120 mm",
         "driver_area": "155 x 90 x 55 mm",
         "outer_dimensions": "265 x 205 x 115 mm",
-        "gross_weight": "1.830 kg"
+        "gross_weight": "1.830 kg",
+        "warranty": "2 years"
       }
     },
     {
@@ -300,7 +305,8 @@
         "material": "Aluminium",
         "body_weight": "650g",
         "power": "100W",
-        "lens_type": "Spiral"
+        "lens_type": "Spiral",
+        "warranty": "2 years"
       }
     },
     {
@@ -334,7 +340,8 @@
         "material": "Aluminium",
         "body_weight": "650g",
         "power": "100W",
-        "lens_type": "Spiral"
+        "lens_type": "Spiral",
+        "warranty": "2 years"
       }
     },
     {
@@ -368,7 +375,8 @@
         "material": "Aluminium",
         "body_weight": "650g",
         "power": "100W",
-        "lens_type": "Spiral"
+        "lens_type": "Spiral",
+        "warranty": "2 years"
       }
     },
     {
@@ -402,7 +410,7 @@
         "material": "Metal + Glass",
         "cordLength": "Adjustable up to 120cm",
         "dimensions": "Diameter: 25cm",
-        "warranty": "1 year"
+        "warranty": "2 years"
       }
     },
     {

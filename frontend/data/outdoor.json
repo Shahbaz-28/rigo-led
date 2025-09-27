@@ -18,7 +18,8 @@
           "pcb_size": "165 x 120 mm",
           "driver_area": "155 x 90 x 55 mm",
           "outer_dimensions": "265 x 205 x 115 mm",
-          "gross_weight": "1.830 kg"
+          "gross_weight": "1.830 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -39,7 +40,8 @@
           "pcb_size": "232 x 154 mm",
           "driver_area": "220 x 110 x 60 mm",
           "outer_dimensions": "340 x 250 x 130 mm",
-          "gross_weight": "3.410 kg"
+          "gross_weight": "3.410 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -60,7 +62,8 @@
           "pcb_size": "275 x 190 mm",
           "driver_area": "220 x 110 x 60 mm",
           "outer_dimensions": "390 x 300 x 140 mm",
-          "gross_weight": "4.450 kg"
+          "gross_weight": "4.450 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -81,7 +84,8 @@
           "pcb_size": "175 Dia mm",
           "driver_area": "165 x 95 x 50 mm",
           "outer_dimensions": "245 Dia x 117 mm",
-          "gross_weight": "1.890 kg"
+          "gross_weight": "1.890 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -102,7 +106,8 @@
           "pcb_size": "260 Dia mm",
           "driver_area": "220 x 110 x 60 mm",
           "outer_dimensions": "341 mm Dia x 131 mm",
-          "gross_weight": "3.165 kg"
+          "gross_weight": "3.165 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -124,7 +129,8 @@
           "driver_area": "177 x 85 x 70 mm",
           "outer_dimensions": "435 x 200 x 95 mm",
           "pipe_diameter": "60 mm",
-          "gross_weight": "2.150 kg"
+          "gross_weight": "2.150 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -146,7 +152,8 @@
           "driver_area": "225 x 105 x 70 mm",
           "outer_dimensions": "535 x 263 x 100 mm",
           "pipe_diameter": "64 mm",
-          "gross_weight": "3.820 kg"
+          "gross_weight": "3.820 kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -163,7 +170,8 @@
           "material": "Aluminium",
           "driver_box_weight": "450g",
           "driver_size": "220 x 110 x 60mm",
-          "gross_weight": "3.205kg"
+          "gross_weight": "3.205kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -180,7 +188,8 @@
           "material": "Aluminium",
           "driver_box_weight": "530g",
           "driver_size": "220 x 110 x 60mm",
-          "gross_weight": "3.205kg"
+          "gross_weight": "3.205kg",
+          "warranty": "2 years"
         }
       },
       {
@@ -189,7 +198,8 @@
         "product_code": "#HB501",
         "specifications": {
           "material": "Aluminium",
-          "body_weight": "650g"
+          "body_weight": "650g",
+          "warranty": "2 years"
         }
       }
     ]
