@@ -3,7 +3,7 @@ import { Twitter, Dribbble, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 py-8">
+    <footer className="bg-white border-t border-gray-100 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
           {/* Left side - Brand info */}
@@ -11,12 +11,12 @@ export default function Footer() {
             <img 
               src="/images/logo.png" 
               alt="LAMPITA Logo" 
-              className="h-8 sm:h-10 w-auto"
+              className="h-10 sm:h-12 lg:h-16 w-auto"
             />
           </div>
 
           {/* Center - Navigation links */}
-          <div className="flex flex-wrap items-center gap-8 text-sm font-medium">
+          <div className="flex flex-wrap items-center gap-8 text-base sm:text-lg font-semibold">
          <h1 className="text-gray-600 ">All Rights Reserved Rigo 2025</h1>
           </div>
 

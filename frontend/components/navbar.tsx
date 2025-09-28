@@ -83,9 +83,9 @@ export default function Navbar() {
               <Image
                 src="/images/logo.png"
                 alt="RIGO Logo"
-                width={100}
-                height={40}
-                className="h-8 sm:h-10 lg:h-12 w-auto"
+                width={140}
+                height={56}
+                className="h-10 sm:h-12 lg:h-16 w-auto"
                 priority
               />
             </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <Link
               href="/"
-              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
               onClick={handleLinkClick}
             >
               HOME
@@ -106,7 +106,7 @@ export default function Navbar() {
             <div className="relative" data-dropdown>
               <button
                 onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
-                className="flex items-center text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+                className="flex items-center text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
               >
                 All Products
                 <ChevronDown
@@ -142,14 +142,14 @@ export default function Navbar() {
 
             <a
               href="/about"
-              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200"
+              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
               onClick={handleLinkClick}
             >
               About Us
             </a>
             <a
               href="/contact"
-              className="relative text-sm font-medium text-foreground hover:text-muted-foreground transition-colors duration-200"
+              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
               onClick={handleLinkClick}
             >
               Contact
@@ -164,7 +164,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaWhatsapp className="w-6 h-6" aria-label="WhatsApp" />
+              <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" aria-label="WhatsApp" />
             </a>
             <a
               href="https://instagram.com/your-handle"
@@ -172,7 +172,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaInstagram className="w-6 h-6" aria-label="Instagram" />
+              <FaInstagram className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" aria-label="Instagram" />
             </a>
           </div>
 
@@ -221,18 +221,18 @@ export default function Navbar() {
 
             {/* Products Section */}
             <div className="border border-border rounded-lg overflow-hidden">
-              <div className="py-3 px-4 text-base font-medium text-foreground bg-muted">All Products</div>
+              <div className="py-3 px-4 text-lg font-bold text-foreground bg-muted">All Products</div>
               <div className="bg-background">
                 <Link
                   href="/products?tab=indoor"
-                  className="block py-3 px-6 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
+                  className="block py-3 px-6 text-base font-bold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Indoor Products
                 </Link>
                 <Link
                   href="/products?tab=outdoor"
-                  className="block py-3 px-6 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
+                  className="block py-3 px-6 text-base font-bold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Outdoor Products
@@ -242,14 +242,14 @@ export default function Navbar() {
 
             <a
               href="/about"
-              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              className="block py-3 px-4 text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </a>
             <a
               href="/contact"
-              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              className="block py-3 px-4 text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
@@ -264,9 +264,9 @@ export default function Navbar() {
                 <Image
                   src="/images/logo.png"
                   alt="RIGO Logo"
-                  width={100}
-                  height={40}
-                  className="h-8 sm:h-10 lg:h-12 w-auto"
+                  width={140}
+                  height={56}
+                  className="h-10 sm:h-12 lg:h-16 w-auto"
                   priority
                 />
               </Link>
@@ -281,7 +281,7 @@ export default function Navbar() {
                 className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp className="w-6 h-6" />
+                <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
               </a>
               <a
                 href="https://instagram.com/your-handle"
@@ -290,7 +290,7 @@ export default function Navbar() {
                 className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
                 aria-label="Instagram"
               >
-                <FaInstagram className="w-6 h-6" />
+                <FaInstagram className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
               </a>
             </div>
           </div>
