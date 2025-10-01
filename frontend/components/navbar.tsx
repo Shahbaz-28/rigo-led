@@ -1,7 +1,6 @@
 "use client"
 
 import { Menu, X, ChevronDown } from "lucide-react"
-import { FaWhatsapp, FaInstagram } from "react-icons/fa"
 import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -159,12 +158,18 @@ export default function Navbar() {
           {/* Desktop Icons */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/your-number"
+              href="https://u.wechat.com/kP_PkMqInEFhHvN6A0ipJ-A?s=4"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" aria-label="WhatsApp" />
+              <Image 
+                src="/images/wechat.png" 
+                alt="WeChat" s
+                width={32} 
+                height={32} 
+                className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+              />
             </a>
             <a
               href="https://instagram.com/your-handle"
@@ -172,7 +177,13 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform"
             >
-              <FaInstagram className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" aria-label="Instagram" />
+              <Image 
+                src="/images/instagram.png" 
+                alt="Instagram" 
+                width={32} 
+                height={32} 
+                className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+              />
             </a>
           </div>
 
@@ -275,13 +286,19 @@ export default function Navbar() {
             {/* Icons */}
             <div className="flex items-center justify-center space">
               <a
-                href="https://wa.me/your-number"
+                href="https://u.wechat.com/kP_PkMqInEFhHvN6A0ipJ-A?s=4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
-                aria-label="WhatsApp"
+                aria-label="WeChat"
               >
-                <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
+                <Image 
+                  src="/images/wechat.png" 
+                  alt="WeChat" 
+                  width={32} 
+                  height={32} 
+                  className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
               </a>
               <a
                 href="https://instagram.com/your-handle"
@@ -290,7 +307,13 @@ export default function Navbar() {
                 className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
                 aria-label="Instagram"
               >
-                <FaInstagram className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
+                <Image 
+                  src="/images/instagram.png" 
+                  alt="Instagram" 
+                  width={32} 
+                  height={32} 
+                  className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
               </a>
             </div>
           </div>

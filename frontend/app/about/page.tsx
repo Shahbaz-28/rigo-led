@@ -195,83 +195,9 @@ export default function AboutPage(): JSX.Element {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat: Stat, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-sm sm:text-base text-gray-600 font-medium">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Mission & Values */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12 sm:mb-16"
-          >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Core Values
-            </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-              These principles guide everything we do, from product development to customer service
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {values.map((value: Value, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="relative h-full bg-white rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 overflow-hidden border border-gray-200/50 hover:border-gray-300/50 transform hover:-translate-y-2 p-6 sm:p-8">
-                  {/* Gradient Background Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-700`} />
-
-                  <div className="relative z-10">
-                    {/* Icon */}
-                    <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br ${value.gradient} text-white mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-500`}>
-                      {value.icon}
-                    </div>
-
-                    {/* Content */}
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-gray-700 transition-colors duration-300">
-                      {value.title}
-                    </h3>
-                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
+                
 
       {/* Company History */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -343,7 +269,7 @@ export default function AboutPage(): JSX.Element {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -396,10 +322,10 @@ export default function AboutPage(): JSX.Element {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white mx-4 sm:mx-6 lg:mx-8 rounded-3xl">
+      {/* <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white mx-4 sm:mx-6 lg:mx-8 rounded-3xl">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -442,7 +368,7 @@ export default function AboutPage(): JSX.Element {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
