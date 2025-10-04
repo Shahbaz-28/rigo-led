@@ -152,19 +152,49 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-      {/* Header */}
-      <div className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 py-16">
-          <div className="text-center space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 py-3 text-white leading-20">
-              Premium Lighting
-              <span className="block text-amber-400">Collection</span>
-            </h1>
-            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Discover our complete collection of premium lighting solutions
-            </p>
-          </div>
-        </div>
+       {/* Banner Header */}
+       <div className="relative h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden">
+         {/* Background Image */}
+         <div className="absolute inset-0">
+           <Image
+             src="/images/allproduct.webp"
+             alt="Premium Lighting Collection"
+             fill
+             className="object-cover"
+             priority
+           />
+           {/* Enhanced Overlay */}
+           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/50"></div>
+         </div>
+        
+         {/* Content */}
+         <div className="relative z-10 h-full flex items-center justify-center">
+           <div className="text-center space-y-4 sm:space-y-6 px-4">
+             {/* Main Title with Enhanced Design */}
+             <div className="space-y-2 sm:space-y-3">
+               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight drop-shadow-2xl">
+                 <span className="text-white">Premium Lighting </span>
+                 <span className="bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                   Collection
+                 </span>
+               </h1>
+             </div>
+             
+             {/* Enhanced Tagline */}
+             <div className="max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto">
+               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed font-medium drop-shadow-lg">
+                 Discover our complete collection of premium lighting solutions
+               </p>
+             </div>
+             
+             {/* Decorative Elements */}
+             <div className="flex justify-center items-center space-x-2 sm:space-x-4 pt-2 sm:pt-4">
+               <div className="w-8 sm:w-12 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+               <div className="w-2 sm:w-3 h-2 sm:h-3 bg-amber-400 rounded-full"></div>
+               <div className="w-8 sm:w-12 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+             </div>
+           </div>
+         </div>
       </div>
 
       {/* Main Content */}

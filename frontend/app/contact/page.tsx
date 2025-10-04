@@ -129,7 +129,7 @@ export default function ContactPage() {
 
   const handleWhatsAppContact = () => {
     const message = "Hi! I'd like to inquire about RIGO Lighting products and services."
-    const whatsappUrl = `https://wa.me/15551234567?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/918369051700?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 

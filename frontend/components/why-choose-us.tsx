@@ -165,7 +165,7 @@ export default function WhyChooseUs() {
                   </svg>
                 </a> */}
                 <a
-                  href="https://wa.me/your-number"
+                  href="https://wa.me/918369051700?text=Hi!%20I'd%20like%20to%20get%20expert%20consultation%20about%20RIGO%20Lighting%20products%20and%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center px-5 py-4 text-gray-900 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl font-bold hover:from-gray-200 hover:to-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm"
