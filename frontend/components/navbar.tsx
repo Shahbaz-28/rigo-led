@@ -72,10 +72,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[9999] bg-background border-b border-border ${isScrolled ? "shadow-sm" : "shadow-none"} min-h-[80px] flex justify-center items-center`}
+      className={`fixed top-0 left-0 right-0 z-[9999] bg-background border-b border-border ${isScrolled ? "shadow-sm" : "shadow-none"} min-h-[70px] sm:min-h-[80px] flex justify-center items-center`}
     >
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-18 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0 transform transition-transform duration-200 hover:scale-105">
             <Link href="/" onClick={handleLinkClick}>
@@ -165,7 +165,7 @@ export default function Navbar() {
             >
               <Image 
                 src="/images/wechat.png" 
-                alt="WeChat" s
+                alt="WeChat" 
                 width={32} 
                 height={32} 
                 className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
@@ -191,12 +191,12 @@ export default function Navbar() {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200 z-[10001]"
+              className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200 z-[10001]"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>
@@ -207,24 +207,24 @@ export default function Navbar() {
         className={`lg:hidden fixed inset-0 w-full h-full bg-background shadow-2xl transform transition-transform duration-300 ease-out z-[999999] ${isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
       >
-        <div className="flex flex-col h-full min-h-screen bg-background">
+        <div className="flex flex-col h-full bg-background">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
-            <h2 className="text-lg font-semibold text-foreground">Menu</h2>
+          <div className="flex items-center justify-between p-4 sm:p-6 border-b border-border flex-shrink-0">
+            <h2 className="text-lg sm:text-xl font-semibold text-foreground">Menu</h2>
             <button
               onClick={() => setIsMenuOpen(false)}
               className="p-2 text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               aria-label="Close menu"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex-1 px-4 py-4 space-y-2 overflow-y-auto">
+          <div className="flex-1 px-4 sm:px-6 py-4 sm:py-6 space-y-2 sm:space-y-3 overflow-y-auto">
             <Link
               href="/"
-              className="block py-3 px-4 text-base font-medium text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              className="block py-3 sm:py-4 px-4 text-base sm:text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               HOME
@@ -232,18 +232,18 @@ export default function Navbar() {
 
             {/* Products Section */}
             <div className="border border-border rounded-lg overflow-hidden">
-              <div className="py-3 px-4 text-lg font-bold text-foreground bg-muted">All Products</div>
+              <div className="py-3 sm:py-4 px-4 text-base sm:text-lg font-bold text-foreground bg-muted">All Products</div>
               <div className="bg-background">
                 <Link
                   href="/products?tab=indoor"
-                  className="block py-3 px-6 text-base font-bold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
+                  className="block py-3 sm:py-4 px-6 text-sm sm:text-base font-semibold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Indoor Products
                 </Link>
                 <Link
                   href="/products?tab=outdoor"
-                  className="block py-3 px-6 text-base font-bold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
+                  className="block py-3 sm:py-4 px-6 text-sm sm:text-base font-semibold text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Outdoor Products
@@ -253,43 +253,43 @@ export default function Navbar() {
 
             <a
               href="/about"
-              className="block py-3 px-4 text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              className="block py-3 sm:py-4 px-4 text-base sm:text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </a>
             <a
               href="/contact"
-              className="block py-3 px-4 text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
+              className="block py-3 sm:py-4 px-4 text-base sm:text-lg font-bold text-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </a>
           </div>
 
-          {/* Social Icons */}
-          <div className="p-4 border-t border-border flex-shrink-0 flex justify-between items-center">
+          {/* Footer Section */}
+          <div className="p-4 sm:p-6 border-t border-border flex-shrink-0">
             {/* Logo */}
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center mb-4 sm:mb-6">
               <Link href="/" onClick={handleLinkClick}>
                 <Image
                   src="/images/logo.png"
                   alt="RIGO Logo"
                   width={140}
                   height={56}
-                  className="h-10 sm:h-12 lg:h-16 w-auto"
+                  className="h-8 sm:h-10 md:h-12 w-auto"
                   priority
                 />
               </Link>
             </div>
 
-            {/* Icons */}
-            <div className="flex items-center justify-center space">
+            {/* Social Icons */}
+            <div className="flex items-center justify-center space-x-4 sm:space-x-6">
               <a
                 href="https://u.wechat.com/kP_PkMqInEFhHvN6A0ipJ-A?s=4"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
                 aria-label="WeChat"
               >
                 <Image 
@@ -297,14 +297,14 @@ export default function Navbar() {
                   alt="WeChat" 
                   width={32} 
                   height={32} 
-                  className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
                 />
               </a>
               <a
                 href="https://instagram.com/your-handle"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
                 aria-label="Instagram"
               >
                 <Image 
@@ -312,7 +312,7 @@ export default function Navbar() {
                   alt="Instagram" 
                   width={32} 
                   height={32} 
-                  className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
                 />
               </a>
             </div>
