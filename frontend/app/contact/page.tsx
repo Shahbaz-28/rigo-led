@@ -46,7 +46,7 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["info@rigolighting.com", "sales@rigolighting.com"],
+      details: ["jailaxmilightingsolutions@gmail.com", "customercarerigo1@gmail.com"],
       description: "Send us your inquiries anytime",
       gradient: "from-purple-500 to-pink-500"
     },
@@ -135,106 +135,108 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden  flex justify-center items-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/business-meeting-room-high-rise-office-building-with-colorful-decor-furnture_105762-1678.jpg"
-            alt="LED lighting showcase"
-            className="w-full h-full object-cover opacity-90"
-          />
-        </div>
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative max-w-7xl mx-auto px-4 py-32 lg:py-40 z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
-            transition={{ duration: 0.8 }}
-            className="text-center space-y-8"
-          >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{
-              textShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-            }}
-            >
-              Get In Touch
-            </h1>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Contact Information Cards */}
-      <section className="py-20 px-4">
+      <section className="py-4 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Contact Information
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Multiple ways to reach us. Choose the method that works best for you.
             </p>
           </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactInfo.map((info, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="relative h-full bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 overflow-hidden border border-gray-200/50 hover:border-gray-300/50 transform hover:-translate-y-2 p-8">
-                  {/* Gradient Background Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${info.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-700`} />
-
-                  <div className="relative z-10 text-center">
-                    {/* Icon */}
-                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${info.gradient} text-white mb-6 group-hover:scale-110 transition-transform duration-500`}>
-                      {info.icon}
-                    </div>
-
-                    {/* Content */}
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-700 transition-colors duration-300">
-                      {info.title}
-                    </h3>
-
-                    <div className="space-y-1 mb-4">
-                      {info.details.map((detail, idx) => (
-                        <p key={idx} className="text-gray-900 font-medium">
-                          {detail}
-                        </p>
-                      ))}
-                    </div>
-
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {info.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* Contact Form & Quick Contact */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-2 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Contact Form */}
+           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 items-stretch">
+            {/* Quick Contact & Additional Options - Show first on mobile */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-6 h-full order-1 lg:order-2"
+            >
+              {/* WhatsApp Quick Contact */}
+              <div className="bg-white rounded-3xl shadow-xl p-8 h-auto">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Need Immediate Help?
+                </h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Get instant support through WhatsApp. Our team is ready to assist you with
+                  product inquiries, technical support, and project consultations.
+                </p>
+
+                <button
+                  onClick={handleWhatsAppContact}
+                  className="group w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                >
+                  <div className="flex items-center justify-center cursor-pointer">
+                    <FaWhatsapp className="w-6 h-6 mr-3" />
+                    <span>Chat on WhatsApp</span>
+                  </div>
+                </button>
+              </div>
+
+              {/* Additional Contact Options */}
+              <div className="bg-white rounded-3xl shadow-xl p-8 h-auto">
+                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                   Other Ways to Reach Us
+                 </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                    <Phone className="w-5 h-5 text-gray-600 mr-3" />
+                    <div>
+                      <p className="font-semibold text-gray-900">Contact</p>
+                      <p className="text-sm text-gray-600">+918369051700</p>
+                    </div>
+                  </div>
+
+                   <div className="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                     <Mail className="w-5 h-5 text-gray-600 mr-3" />
+                     <div>
+                       <p className="font-semibold text-gray-900">Email</p>
+                       <p className="text-sm text-gray-600">
+                         <a href="mailto:jailaxmilightingsolutions@gmail.com" className="hover:text-gray-900 underline">
+                           jailaxmilightingsolutions@gmail.com
+                         </a>
+                       </p>
+                     </div>
+                   </div>
+
+                   <div className="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                     <Mail className="w-5 h-5 text-gray-600 mr-3" />
+                     <div>
+                       <p className="font-semibold text-gray-900">Customer Care Mail</p>
+                       <p className="text-sm text-gray-600">
+                         <a href="mailto:customercarerigo1@gmail.com" className="hover:text-gray-900 underline">
+                           customercarerigo1@gmail.com
+                         </a>
+                       </p>
+                     </div>
+                   </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Contact Form - Show second on mobile */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="h-full"
+              className="h-full order-2 lg:order-1"
             >
               <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-10 h-full">
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">
@@ -374,114 +376,18 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Quick Contact & Additional Options */}
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="space-y-8 h-full"
-
-            >{/* WhatsApp Quick Contact */}
-              <div className="bg-white rounded-3xl shadow-xl p-8 h-auto">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Need Immediate Help?
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Get instant support through WhatsApp. Our team is ready to assist you with
-                  product inquiries, technical support, and project consultations.
-                </p>
-
-                <button
-                  onClick={handleWhatsAppContact}
-                  className="group w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
-                >
-                  <div className="flex items-center justify-center">
-                    <FaWhatsapp className="w-6 h-6 mr-3" />
-                    <span>Chat on WhatsApp</span>
-                    <MessageCircle className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </button>
-              </div>
-
-              {/* Additional Contact Options */}
-              <div className="bg-white rounded-3xl shadow-xl p-8 h-auto">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Other Ways to Reach Us
-                </h3>
-
-                <div className="space-y-4">
-                  <div className="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                    <Phone className="w-5 h-5 text-gray-600 mr-3" />
-                    <div>
-                      <p className="font-semibold text-gray-900">Emergency Support</p>
-                      <p className="text-sm text-gray-600">+91 98765 43210</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                    <Mail className="w-5 h-5 text-gray-600 mr-3" />
-                    <div>
-                      <p className="font-semibold text-gray-900">Technical Support</p>
-                      <p className="text-sm text-gray-600">support@rigolighting.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
 
           </div>
         </div>
       </section>
-
-      {/* Map Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            {/* Map Section */}
-            <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-full">
-              <div className="p-8">
-                <h3 className="text-2xl text-center font-bold text-gray-900 mb-4">
-                  Visit Our Showroom
-                </h3>
-                <p className="text-gray-600 mb-6 text-center leading-relaxed">
-                  Experience our lighting solutions in person. Our showroom features
-                  the latest products and interactive displays.
-                </p>
-              </div>
-
-              {/* Map Container */}
-              <div className="h-[500px] w-full">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.621465758763!2d-74.00594938459418!3d40.71274997932851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1233c4bbbd%3A0x4c1e1b6f4e1e7b0!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1621234567890!5m2!1sen!2s"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-b-3xl"
-                ></iframe>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* FAQ or Additional Info Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               We're Here to Help
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
+             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Whether you're planning a new project, need technical support, or want to learn
               more about our products, our team of lighting experts is ready to assist you.
             </p>

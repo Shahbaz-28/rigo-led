@@ -94,7 +94,7 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <Link
               href="/"
-              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+              className="relative text-base font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
               onClick={handleLinkClick}
             >
               HOME
@@ -105,7 +105,7 @@ export default function Navbar() {
             <div className="relative" data-dropdown>
               <button
                 onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
-                className="flex items-center text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
+                className="flex items-center text-base font-bold text-foreground hover:text-muted-foreground transition-colors duration-200 group"
               >
                 All Products
                 <ChevronDown
@@ -141,14 +141,14 @@ export default function Navbar() {
 
             <a
               href="/about"
-              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
+              className="relative text-base font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
               onClick={handleLinkClick}
             >
               About Us
             </a>
             <a
               href="/contact"
-              className="relative text-lg font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
+              className="relative text-base font-bold text-foreground hover:text-muted-foreground transition-colors duration-200"
               onClick={handleLinkClick}
             >
               Contact

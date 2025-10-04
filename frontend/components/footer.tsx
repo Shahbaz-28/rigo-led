@@ -1,5 +1,6 @@
 
-import { Twitter, Dribbble, Instagram } from "lucide-react"
+import { Dribbble, Instagram } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function Footer() {
   return (
@@ -22,8 +23,8 @@ export default function Footer() {
 
           {/* Right side - Social media icons */}
           <div className="flex items-center space-x-5">
-            <a href="#" className="text-gray-600 hover:text-orange-500 transition-colors duration-200 p-1">
-              <Twitter size={20} />
+            <a href="https://wa.me/918369051700" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-500 transition-colors duration-200 p-1">
+              <FaWhatsapp size={20} />
             </a>
          
             <a href="#" className="text-gray-600 hover:text-orange-500 transition-colors duration-200 p-1">

@@ -115,34 +115,6 @@ export default function AboutPage(): JSX.Element {
 
   return (
     <div className="relative overflow-hidden" >
-      {/* Hero Section */}
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden min-h-screen flex justify-center items-center" style={{ height: 'calc(100dvh - 5rem)' }}>
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/beautiful-light-lamp_1339-3596.jpg"
-            alt="LED lighting showcase"
-            className="w-full h-full object-cover opacity-90"
-          />
-        </div>
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative max-w-7xl mx-auto px-4 py-32 lg:py-40 z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
-            transition={{ duration: 0.8 }}
-            className="text-center space-y-8"
-          >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{
-              textShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-            }}
-            >
-              Where Vision Meets Illumination
-            </h1>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Company Introduction */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -200,7 +172,7 @@ export default function AboutPage(): JSX.Element {
                 
 
       {/* Company History */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
@@ -266,7 +238,7 @@ export default function AboutPage(): JSX.Element {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       {/* <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
