@@ -269,52 +269,54 @@ export default function Navbar() {
 
           {/* Footer Section */}
           <div className="p-4 sm:p-6 border-t border-border flex-shrink-0">
-            {/* Logo */}
-            <div className="flex items-center justify-center mb-4 sm:mb-6">
-              <Link href="/" onClick={handleLinkClick}>
-                <Image
-                  src="/images/logo.png"
-                  alt="RIGO Logo"
-                  width={140}
-                  height={56}
-                  className="h-8 sm:h-10 md:h-12 w-auto"
-                  priority
-                />
-              </Link>
-            </div>
+            <div className="flex items-center justify-between">
+              {/* Logo - Left Side */}
+              <div className="flex items-center">
+                <Link href="/" onClick={handleLinkClick}>
+                  <Image
+                    src="/images/logo.png"
+                    alt="RIGO Logo"
+                    width={140}
+                    height={56}
+                    className="h-8 sm:h-10 md:h-12 w-auto"
+                    priority
+                  />
+                </Link>
+              </div>
 
-            {/* Social Icons */}
-            <div className="flex items-center justify-center space-x-4 sm:space-x-6">
-              <a
-                href="https://u.wechat.com/kP_PkMqInEFhHvN6A0ipJ-A?s=4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
-                aria-label="WeChat"
-              >
-                <Image 
-                  src="/images/wechat.png" 
-                  alt="WeChat" 
-                  width={32} 
-                  height={32} 
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                />
-              </a>
-              <a
-                href="https://instagram.com/your-handle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
-                aria-label="Instagram"
-              >
-                <Image 
-                  src="/images/instagram.png" 
-                  alt="Instagram" 
-                  width={32} 
-                  height={32} 
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                />
-              </a>
+              {/* Social Icons - Right Side */}
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <a
+                  href="https://u.wechat.com/kP_PkMqInEFhHvN6A0ipJ-A?s=4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                  aria-label="WeChat"
+                >
+                  <Image 
+                    src="/images/wechat.png" 
+                    alt="WeChat" 
+                    width={32} 
+                    height={32} 
+                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  />
+                </a>
+                <a
+                  href="https://instagram.com/your-handle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 sm:p-3 text-foreground hover:text-foreground hover:bg-muted rounded-full transition-all duration-200 transform hover:scale-110"
+                  aria-label="Instagram"
+                >
+                  <Image 
+                    src="/images/instagram.png" 
+                    alt="Instagram" 
+                    width={32} 
+                    height={32} 
+                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
