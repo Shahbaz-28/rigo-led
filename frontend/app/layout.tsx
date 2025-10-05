@@ -156,7 +156,7 @@ export default function RootLayout({
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} overflow-x-hidden`}>
         <Navbar/>
-        <div className="mb-[80px]">
+        <div className="mb-[70px]">
         </div>
         {children}
         <Footer/>

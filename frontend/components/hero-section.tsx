@@ -30,7 +30,7 @@ const heroSlides = [
     subtitle: "ISN'T EXPENSIVE",
     highlight: "IT'S PRICELESS",
     description:
-      "Discover premium lighting solutions that transform your space with unmatched elegance and sophistication.",
+      "Discover premium lighting solutions that transform your space with unmatched elegance.",
       
   },
  
@@ -130,7 +130,7 @@ export default function HeroSection() {
 
             {/* Description with Fade In */}
             <p
-              className={`text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl leading-relaxed font-light transition-all duration-700 delay-300 ${
+              className={`text-lg sm:text-xl md:text-2xl text-gray-300 mb-4 sm:mb-6 md:mb-10 max-w-2xl leading-tight sm:leading-relaxed font-light transition-all duration-700 delay-300 ${
                 isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
               }`}
               style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.8)" }}
@@ -142,7 +142,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Navigation - Centered Layout */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center space-y-6">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center space-y-6">
         {/* Scroll Indicator - Hidden on small screens */}
         <div className="hidden sm:flex flex-col items-center text-white/60 animate-bounce">
           <span className="text-xs sm:text-sm mb-2 font-light tracking-wider">SCROLL</span>
@@ -152,15 +152,15 @@ export default function HeroSection() {
         </div>
 
         {/* Pagination Dots */}
-        <div className="flex items-center space-x-3 bg-black/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/10">
+        <div className="flex items-center space-x-2 sm:space-x-3 bg-black/30 backdrop-blur-md px-4 py-2 sm:px-6 sm:py-3 rounded-full border border-white/10 mt-4 sm:mt-0">
           {heroSlides.map((_, index) => (
             <button
               key={index}
               onClick={() => handleSlideChange(index)}
               className={`transition-all duration-500 rounded-full ${
                 index === currentSlide
-                  ? "w-12 h-3 bg-gradient-to-r from-amber-400 to-amber-600 shadow-lg shadow-amber-500/50"
-                  : "w-3 h-3 bg-white/40 hover:bg-white/60 hover:scale-110"
+                  ? "w-8 h-2 sm:w-12 sm:h-3 bg-gradient-to-r from-amber-400 to-amber-600 shadow-lg shadow-amber-500/50"
+                  : "w-2 h-2 sm:w-3 sm:h-3 bg-white/40 hover:bg-white/60 hover:scale-110"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
