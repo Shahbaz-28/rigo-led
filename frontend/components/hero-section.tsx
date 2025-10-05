@@ -1,41 +1,39 @@
 "use client"
+
 import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 
 const heroSlides = [
-  {
-    id: 1,
-    image: "https://images.unsplash.com/photo-1662059361834-d361807d63e7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "QUALITY",
-    subtitle: "ISN'T EXPENSIVE",
-    highlight: "IT'S PRICELESS",
-    description: "Discover premium lighting solutions that transform your space with unmatched elegance and sophistication."
-  },
+    {
+      id: 1,
+      image: "/herobg3.jpg",
+      title: "ILLUMINATE",
+      subtitle: "YOUR SPACE",
+      highlight: "WITH STYLE",
+      description: "Transform any space into a masterpiece with our exclusive collection of luxury lighting designs.",
+    },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=858&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+    "https://images.unsplash.com/photo-1572786258684-9b3d5671e7d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "ILLUMINATE",
     subtitle: "YOUR DREAMS",
     highlight: "WITH STYLE",
-    description: "Experience the perfect blend of modern design and cutting-edge technology in every lighting fixture."
+    description: "Experience the perfect blend of modern design and cutting-edge technology in every lighting fixture.",
   },
   {
     id: 3,
-    image: "/herobg3.jpg",
-    title: "PREMIUM",
-    subtitle: "LIGHTING",
-    highlight: "SOLUTIONS",
-    description: "Transform any space into a masterpiece with our exclusive collection of luxury lighting designs."
+    image:
+      "https://images.unsplash.com/photo-1662059361834-d361807d63e7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "QUALITY",
+    subtitle: "ISN'T EXPENSIVE",
+    highlight: "IT'S PRICELESS",
+    description:
+      "Discover premium lighting solutions that transform your space with unmatched elegance and sophistication.",
+      
   },
-  {
-    id: 4,
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "CRAFTED",
-    subtitle: "FOR PERFECTION",
-    highlight: "BUILT TO LAST",
-    description: "Every piece is meticulously designed and crafted to deliver exceptional quality and lasting beauty."
-  }
+ 
 ]
 
 export default function HeroSection() {
@@ -46,7 +44,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
-    }, 3000) 
+    }, 5000)
 
     return () => clearInterval(interval)
   }, [])
@@ -64,110 +62,111 @@ export default function HeroSection() {
     }, 300)
   }
 
-
   const currentSlideData = heroSlides[currentSlide]
 
   return (
-    <section className="relative h-screen flex items-center overflow-hidden" style={{ height: 'calc(100dvh - 5rem)' }}>
-      {/* Background Images with Fade Transition */}
+    <section className="relative h-[50vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-screen flex items-center overflow-hidden">
+      {/* Background Images with Parallax Effect */}
       {heroSlides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-700 ease-in-out ${
-            index === currentSlide ? 'opacity-70' : 'opacity-0'
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-out ${
+            index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-105"
           }`}
           style={{
             backgroundImage: `url("${slide.image}")`,
-            transform: 'scale(1.05)'
           }}
         />
       ))}
 
-      {/* Gradient Overlays for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30" />
+      {/* Enhanced Gradient Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-5xl">
-          {/* Content with Fade Animation */}
-          <div className={`transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 transform translate-y-4' : 'opacity-100 transform translate-y-0'
-            }`}>
+      {/* Animated Vignette Effect */}
+      <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]" />
 
+      {/* Main Content - Centered on small, Left Aligned on larger screens */}
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 relative z-10">
+        <div className="max-w-4xl text-center sm:text-left">
+          {/* Content with Staggered Fade Animation */}
+          <div
+            className={`transition-all duration-700 ease-out ${
+              isTransitioning ? "opacity-0 translate-x-8 blur-sm" : "opacity-100 translate-x-0 blur-0"
+            }`}
+          >
+  
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">{currentSlideData.title}</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
+            {/* Main Heading with Text Shadow */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
+              <span
+                className={`block mb-2 transition-all duration-700 delay-150 ${
+                  isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+                }`}
+                style={{ textShadow: "2px 2px 20px rgba(0,0,0,0.8)" }}
+              >
+                {currentSlideData.title}
+              </span>
+
+              <span
+                className={`block mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-gray-300 transition-all duration-700 delay-200 ${
+                  isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+                }`}
+              >
                 {currentSlideData.subtitle}
               </span>
-              <span className="block ">
+
+              <span
+                className={`block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-transparent bg-clip-text transition-all duration-700 delay-250 ${
+                  isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+                }`}
+                style={{
+                  filter: "drop-shadow(0 0 30px rgba(251, 191, 36, 0.5))",
+                }}
+              >
                 {currentSlideData.highlight}
               </span>
             </h1>
 
-            {/* Description */}
-            {/* <p className="text-xl sm:text-2xl text-gray-300 mb-10 max-w-3xl leading-relaxed font-light">
+            {/* Description with Fade In */}
+            <p
+              className={`text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl leading-relaxed font-light transition-all duration-700 delay-300 ${
+                isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+              }`}
+              style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.8)" }}
+            >
               {currentSlideData.description}
-            </p> */}
-
-            {/* CTA Buttons */}
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-gray-900 font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg"
-              >
-                Explore Collection
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300"
-              >
-                <Play className="mr-2 w-5 h-5" />
-                Watch Demo
-              </Button>
-            </div> */}
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Bottom Pagination Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="flex items-center space-x-3">
+      {/* Bottom Navigation - Centered Layout */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center space-y-6">
+        {/* Scroll Indicator - Hidden on small screens */}
+        <div className="hidden sm:flex flex-col items-center text-white/60 animate-bounce">
+          <span className="text-xs sm:text-sm mb-2 font-light tracking-wider">SCROLL</span>
+          <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/30 rounded-full flex justify-center backdrop-blur-sm">
+            <div className="w-0.5 sm:w-1 h-2 sm:h-3 bg-white/50 rounded-full mt-1.5 sm:mt-2"></div>
+          </div>
+        </div>
+
+        {/* Pagination Dots */}
+        <div className="flex items-center space-x-3 bg-black/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/10">
           {heroSlides.map((_, index) => (
             <button
               key={index}
               onClick={() => handleSlideChange(index)}
-              className={`transition-all duration-300 rounded-full ${index === currentSlide
-                  ? 'w-12 h-3 bg-gradient-to-r from-gray-300 to-gray-100 shadow-lg'
-                  : 'w-3 h-3 bg-white/40 hover:bg-white/60'
-                }`}
+              className={`transition-all duration-500 rounded-full ${
+                index === currentSlide
+                  ? "w-12 h-3 bg-gradient-to-r from-amber-400 to-amber-600 shadow-lg shadow-amber-500/50"
+                  : "w-3 h-3 bg-white/40 hover:bg-white/60 hover:scale-110"
+              }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
-
-        {/* Scroll Indicator */}
-        {/* <div className="flex flex-col items-center text-white/70 mt-6">
-          <span className="text-sm mb-2">Scroll to explore</span>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce"></div>
-          </div>
-        </div> */}
       </div>
-
-      {/* Progress Bar */}
-      {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20 z-20">
-        <div 
-          className="h-full bg-gradient-to-r from-amber-400 to-amber-500 transition-all duration-300 ease-out"
-          style={{ 
-            width: `${((currentSlide + 1) / heroSlides.length) * 100}%` 
-          }}
-        />
-      </div> */}
     </section>
   )
 }
