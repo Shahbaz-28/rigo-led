@@ -24,7 +24,7 @@ export default function ProductDetails() {
 
   const handleWhatsAppQuery = () => {
     const message = `Hi! I'm interested in the ${product?.title}. Can you provide more information about this product?`
-    const whatsappUrl = `https://wa.me/your-number?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/918369051700?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -299,7 +299,7 @@ export default function ProductDetails() {
             <div className="space-y-4">
               <Button
                 onClick={handleWhatsAppQuery}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Inquire on WhatsApp
