@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'RIGO Lighting - Premium LED Solutions & Expert Consultation',
+    default: 'Rigo',
     template: '%s | RIGO Lighting'
   },
   description: 'RIGO Lighting offers premium LED lighting solutions for indoor and outdoor applications. Expert consultation, innovative products, and professional lighting services. Get 2-year warranty on all products.',
