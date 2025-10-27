@@ -1,8 +1,631 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Nexus Series",
+      "id": 2,
+      "title": "DECO SERIES (Concealed Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+        "/images/products/platina series (1).png",
+        "/images/products/platina series (2).png",
+        "/images/products/platina series (3).png",
+        "/images/products/platina series (4).png"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-101",
+            "Type": "Conceal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "4 Watt/8 Watt/12 Watt/15 watt/18 Watt/22 Watt /30 Watt",
+            "Shape": "Square/Round",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+             "Power Factor": "0.95",
+             "Surge": "2.5KVA",
+             "IP Rating": "IP20",
+            "Warranty": "2 Years"
+            
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "title": "Deco Series (Surface Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+        "/images/products/platina series (1).png",
+        "/images/products/platina series (2).png",
+        "/images/products/platina series (3).png",
+        "/images/products/platina series (4).png"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-102",
+            "Type": "Surface",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "8 Watt/15 watt/22 Watt /30 Watt",
+            "Shape": "Square/Round",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "GLOW SERIES (Surface Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+        "/images/products/platina series (1).png",
+        "/images/products/platina series (2).png",
+        "/images/products/platina series (3).png",
+        "/images/products/platina series (4).png"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-103",
+            "Type": "Surface",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "8 Watt/15 watt/22 Watt",
+            "Shape": "Square/Round",
+            "Material": "PC",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "NEO SERIES (PVC Down light Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+        "/images/products/platina series (1).png",
+        "/images/products/platina series (2).png",
+        "/images/products/platina series (3).png",
+        "/images/products/platina series (4).png"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-107",
+            "Type": "Conceal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "12 Watt/18 Watt/24 watt",
+            "Shape": "Square/Round",
+            "Material": "PC",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "GLOW SERIES (Conseal Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+        "/images/products/platina series (1).png",
+        "/images/products/platina series (2).png",
+        "/images/products/platina series (3).png",
+        "/images/products/platina series (4).png"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-103",
+            "Type": "Conseal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "8 Watt/15 watt/22 Watt",
+            "Shape": "Square/Round",
+            "Material": "PC",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "RAINBOW SERIES (Conseal Panel)",
+      "description": "Innovative multi-color LED lighting series with dual PCB design. Perfect for creating dynamic lighting effects and ambiance.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 199.99,
+      "originalPrice": 279.99,
+      "discount": 29,
+      "image": "/images/products/rainbow series (1).png",
+      "images": [
+        "/images/products/rainbow series (1).png",
+        "/images/products/rainbow series (2).png",
+        "/images/products/rainbow series (3).png",
+        "/images/products/rainbow series (4).png"
+      ],
+      "rating": 4.6,
+      "reviews": 134,
+      "inStock": true,
+ "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-105",
+            "Type": "Conseal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "3+3 Watt/6+3 watt/12+4 Watt",
+            "Shape": "Square/Round",
+            "Material": "Aluminium",
+            "Color": "White+pgb|white+blue|white+pink ",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "RAINBOW SERIES (Surface Panel)",
+      "description": "Innovative multi-color LED lighting series with dual PCB design. Perfect for creating dynamic lighting effects and ambiance.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 199.99,
+      "originalPrice": 279.99,
+      "discount": 29,
+      "image": "/images/products/rainbow series (1).png",
+      "images": [
+        "/images/products/rainbow series (1).png",
+        "/images/products/rainbow series (2).png",
+        "/images/products/rainbow series (3).png",
+        "/images/products/rainbow series (4).png"
+      ],
+      "rating": 4.6,
+      "reviews": 134,
+      "inStock": true,
+ "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-105",
+            "Type": "Surface",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "3+3 Watt/6+3 watt/12+4 Watt",
+            "Shape": "Square/Round",
+            "Material": "Aluminium",
+            "Color": "White+pgb|white+blue|white+pink ",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "PLATINA SERIES (Down light Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-108",
+            "Type": "Conceal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "16 Watt/24 watt/32 Watt",
+            "Shape": "Square/Round",
+            "Material": "Aluminium",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": "PRIMA (Down light Panel)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-109",
+            "Type": "Conceal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "12 Watt/18 watt/24 Watt",
+            "Shape": "Square/Round",
+            "Material": "Aluminium",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "OLIVE SERIES (Deep Down light)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 249.99,
+      "originalPrice": 329.99,
+      "discount": 24,
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-110",
+            "Type": "Conceal",
+            "Usage/Application": "Living Room, Bedroom, office etc.",
+            "Available Power Watt": "12 Watt/18 watt/24 Watt/32 Watt",
+            "Shape": "Square/Round",
+            "Material": "Aluminium",
+            "Body Color": "White/Black",
+            "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Warranty": "2 Years"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": "ALPHA SERIES (DELTA COB)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-112",
+            "power": "7Watt",
+            "size": "Φ63*61 mm",
+            "cut_out": "Φ50 mm",
+            "body_color": "White/Black",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ82*79 mm",
+            "cut_out": "Φ72 mm",
+            "body_color": "White/Black",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ905*88 mm",
+            "cut_out": "Φ80 mm",
+            "body_color": "White/Black",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "30WATT",
+            "size": "Φ115*105 mm",
+            "cut_out": "Φ105 mm",
+            "body_color": "White/Black",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 12,
+      "title": "ADORE SERIES (DELTA COB)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-113",
+            "power": "7Watt",
+            "size": "Φ75*60 mm",
+            "cut_out": "Φ65 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ85*76 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ95*100 mm",
+            "cut_out": "Φ85 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 13,
+      "title": "FUSION SERIES (CURVE COB)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-114",
+            "power": "7Watt",
+            "size": "Φ70*50 mm",
+            "cut_out": "Φ65 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ85*65 mm",
+            "cut_out": "Φ80 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ95*75 mm",
+            "cut_out": "Φ90 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 14,
+      "title": " SERIES (CURVE COB)",
+      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "image": "/images/products/platina series (1).png",
+      "images": [
+    
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "inStock": true,
+      "features": [
+        "Dust Proof",
+        "Durable",
+        "Economical",
+        "Eco- Friendly"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-114",
+            "power": "7Watt",
+            "size": "Φ70*50 mm",
+            "cut_out": "Φ65 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ85*65 mm",
+            "cut_out": "Φ80 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ95*75 mm",
+            "cut_out": "Φ90 mm",
+            "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 16,
+      "title": "DELLA SERIES",
       "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
       "category": "Indoor LED Lighting",
       "type": "series",
@@ -30,30 +653,30 @@
       "specifications": {
         "items": [
           {
-            "item_no": "RL.CB15-7W",
-            "power": "7W",
-            "size": "Φ62*H59 mm",
+            "Modal No": "RG-116",
+            "power": "7Watt",
+            "size": "Φ65*45 mm",
             "cut_out": "Φ55 mm",
-            "body_color": "BK+GBK/RGD/GD/WH",
-            "chip_size": "13.5*13.5*11 mm",
+            "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
+            "color": "3k 4k 5k 6K 3IN1",
             "beam_angle": "24°"
           },
           {
             "item_no": "RL.CB15-12W",
-            "power": "12W",
-            "size": "Φ85*H64 mm",
+            "power": "12WATT",
+            "size": "Φ85*45 mm",
             "cut_out": "Φ75 mm",
-            "body_color": "BK+GBK/RGD/GD/WH",
-            "chip_size": "13.5*13.5*11 mm",
+            "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
+            "color": "3k 4k 5k 6K 3IN1",
             "beam_angle": "38°"
           },
           {
             "item_no": "RL.CB15-18W",
-            "power": "18W",
-            "size": "Φ105*H72 mm",
+            "power": "18WATT",
+            "size": "Φ105*59 mm",
             "cut_out": "Φ95 mm",
-            "body_color": "BK+GBK/RGD/GD/WH",
-            "chip_size": "13.5*13.5*11 mm",
+            "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
+            "color": "3k 4k 5k 6K 3IN1",
             "beam_angle": "38°"
           }
         ],
@@ -61,175 +684,301 @@
       }
     },
     {
-      "id": 2,
-      "title": "Platina Series",
-      "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
+      "id": 17,
+      "title": "FORIA SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "price": 249.99,
-      "originalPrice": 329.99,
-      "discount": 24,
-      "image": "/images/products/platina series (1).png",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
       "images": [
-        "/images/products/platina series (1).png",
-        "/images/products/platina series (2).png",
-        "/images/products/platina series (3).png",
-        "/images/products/platina series (4).png"
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
       ],
-      "rating": 4.7,
-      "reviews": 89,
+      "rating": 4.8,
+      "reviews": 156,
       "inStock": true,
       "features": [
-        "Premium white/black finish",
-        "Multiple wattage options",
-        "Precise beam control",
-        "Sleek design",
-        "Energy efficient"
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
       ],
       "specifications": {
         "items": [
           {
-            "item_no": "PL-7W",
-            "power": "7W",
-            "size": "Φ65*H55 mm",
+            "Modal No": "RG-116",
+            "power": "7Watt",
+            "size": "Φ68*48 mm",
             "cut_out": "Φ60 mm",
-            "body_color": "WHITE/BLACK",
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
             "beam_angle": "24°"
           },
           {
-            "item_no": "PL-12W",
-            "power": "12W",
-            "size": "Φ80*H65 mm",
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ83*75 mm",
             "cut_out": "Φ75 mm",
-            "body_color": "WHITE/BLACK",
-            "beam_angle": "36°"
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
           },
           {
-            "item_no": "PL-18W",
-            "power": "18W",
-            "size": "Φ95*H75 mm",
-            "cut_out": "Φ90 mm",
-            "body_color": "WHITE/BLACK",
-            "beam_angle": "36°"
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ93*59 mm",
+            "cut_out": "Φ85 mm",
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
           }
         ],
         "warranty": "2 years"
       }
     },
     {
-      "id": 3,
-      "title": "Rainbow Series",
-      "description": "Innovative multi-color LED lighting series with dual PCB design. Perfect for creating dynamic lighting effects and ambiance.",
+      "id": 18,
+      "title": "FORIA PRO SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "price": 199.99,
-      "originalPrice": 279.99,
-      "discount": 29,
-      "image": "/images/products/rainbow series (1).png",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
       "images": [
-        "/images/products/rainbow series (1).png",
-        "/images/products/rainbow series (2).png",
-        "/images/products/rainbow series (3).png",
-        "/images/products/rainbow series (4).png"
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
       ],
-      "rating": 4.6,
-      "reviews": 134,
+      "rating": 4.8,
+      "reviews": 156,
       "inStock": true,
       "features": [
-        "Multi-color LED technology",
-        "Dual PCB design",
-        "360° beam angle",
-        "Compact profile",
-        "Dynamic lighting effects"
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
       ],
       "specifications": {
         "items": [
           {
-            "item_no": "SL-3+3W-RD",
-            "power": "3+3W",
-            "size": "Φ105*H25 mm",
-            "cut_out": "Φ90 mm",
-            "body_color": "Multi-color",
-            "beam_angle": "360°",
-            "pcb_1": "173*6 15D mm",
-            "pcb_2": "208*6 30D mm"
-          },
-          {
-            "item_no": "SL-6+3W-RD",
-            "power": "6+3W",
-            "size": "Φ145*H25 mm",
-            "cut_out": "Φ120 mm",
-            "body_color": "Multi-color",
-            "beam_angle": "360°",
-            "pcb_1": "286*6 30D mm",
-            "pcb_2": "321*6 30D mm"
-          },
-          {
-            "item_no": "SL-12+4W-RD",
-            "power": "12+4W",
-            "size": "Φ195*H25 mm",
-            "cut_out": "Φ160 mm",
-            "body_color": "Multi-color",
-            "beam_angle": "360°",
-            "pcb_1": "438*6 60D mm",
-            "pcb_2": "471*6 40D mm"
-          }
-        ],
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Vela Series",
-      "description": "Sophisticated LED lighting series with refined aesthetics and superior performance. Designed for premium applications.",
-      "category": "Indoor LED Lighting",
-      "type": "series",
-      "tab": "indoor",
-      "price": 279.99,
-      "originalPrice": 349.99,
-      "discount": 20,
-      "image": "/images/products/vela series (1).png",
-      "images": [
-        "/images/products/vela series (1).png",
-        "/images/products/vela series (2).png"
-      ],
-      "rating": 4.9,
-      "reviews": 203,
-      "inStock": true,
-      "features": [
-        "Premium design aesthetics",
-        "Superior light quality",
-        "Multiple power options",
-        "Professional finish",
-        "Optimal beam control"
-      ],
-      "specifications": {
-        "items": [
-          {
-            "item_no": "VL-7W",
-            "power": "7W",
-            "size": "Φ70*H60 mm",
-            "cut_out": "Φ65 mm",
-            "body_color": "WHITE/BLACK",
+            "Modal No": "RG-118",
+            "power": "7Watt",
+            "size": "Φ68*66 mm",
+            "cut_out": "Φ60 mm",
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
             "beam_angle": "24°"
           },
           {
-            "item_no": "VL-12W",
-            "power": "12W",
-            "size": "Φ85*H70 mm",
-            "cut_out": "Φ80 mm",
-            "body_color": "WHITE/BLACK",
-            "beam_angle": "36°"
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ83*75 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
           },
           {
-            "item_no": "VL-18W",
-            "power": "18W",
-            "size": "Φ100*H80 mm",
-            "cut_out": "Φ95 mm",
-            "body_color": "WHITE/BLACK",
-            "beam_angle": "36°"
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ93*85 mm",
+            "cut_out": "Φ85 mm",
+            "body_color": "WH/BK/GBK/RGD",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+
+    },
+    {
+      "id": 19,
+      "title": "CRETA SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-119",
+            "power": "7Watt",
+            "size": "Φ60*75 mm",
+            "cut_out": "Φ55 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ70*75 mm",
+            "cut_out": "Φ65 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ83*85 mm",
+            "cut_out": "Φ78 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 20,
+      "title": "SNOW SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-120",
+            "power": "7Watt",
+            "size": "Φ53*61 mm",
+            "cut_out": "Φ45 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ63*71 mm",
+            "cut_out": "Φ55 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ83*83 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 21,
+      "title": "DUCK SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "7Watt",
+            "size": "Φ53*61 mm",
+            "cut_out": "Φ45 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ63*71 mm",
+            "cut_out": "Φ55 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ83*83 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°"
           }
         ],
         "warranty": "2 years"
@@ -380,7 +1129,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 17,
       "title": "Vintage Industrial Pendant Light",
       "description": "Beautiful vintage-style industrial pendant light with exposed bulb design. Perfect for dining rooms, kitchens, or as a statement piece in any room.",
       "category": "Pendant Lights",
@@ -414,7 +1163,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 18,
       "title": "Contemporary Floor Lamp",
       "description": "Elegant contemporary floor lamp with minimalist design. Features a curved arm and adjustable head for perfect lighting positioning.",
       "category": "Floor Lamps",

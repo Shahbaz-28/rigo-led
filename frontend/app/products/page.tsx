@@ -13,6 +13,12 @@ export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [activeTab, setActiveTab] = useState("indoor")
   const [loadingImages, setLoadingImages] = useState(new Set<string>())
+  const [isHydrated, setIsHydrated] = useState(false)
+
+  // Hydration check
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
 
   // Get tab from URL parameter
   useEffect(() => {
@@ -77,7 +83,7 @@ export default function ProductsPage() {
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 min-h-[480px] flex flex-col">
 
           {/* Image Container */}
-          <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden flex items-center justify-center">
+          {/* <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden flex items-center justify-center">
             {!imageLoaded && (
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
             )}
@@ -88,11 +94,11 @@ export default function ProductsPage() {
                 alt={product.title}
                 fill
                 className="object-cover rounded-xl transition-all duration-700"
-                onLoadingComplete={() => setImageLoaded(true)}
+                onLoad={() => setImageLoaded(true)}
                 priority
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Content Section */}
           <div className="p-5 flex flex-col flex-grow justify-between">
@@ -179,7 +185,7 @@ export default function ProductsPage() {
                  </span>
                </h1>
              </div>
-             
+              
              {/* Enhanced Tagline */}
              <div className="max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto">
                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed font-medium drop-shadow-lg">
@@ -203,13 +209,19 @@ export default function ProductsPage() {
         <div className="mb-8">
           <div className="relative">
             <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-16 pr-6 py-4 text-lg bg-white border-2 border-gray-200 rounded-2xl focus:border-gray-400 focus:outline-none transition-all duration-300"
-            />
+            {isHydrated ? (
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-16 pr-6 py-4 text-lg bg-white border-2 border-gray-200 rounded-2xl focus:border-gray-400 focus:outline-none transition-all duration-300"
+              />
+            ) : (
+              <div className="w-full pl-16 pr-6 py-4 text-lg bg-white border-2 border-gray-200 rounded-2xl">
+                <div className="h-6 bg-gray-200 rounded animate-pulse"></div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -277,10 +289,25 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        <ProductGrid
-          products={filteredCurrentProducts}
-          emptyMessage={`Try adjusting your search terms or browse all ${activeTab} products`}
-        />
+        {isHydrated ? (
+          <ProductGrid
+            products={filteredCurrentProducts}
+            emptyMessage={`Try adjusting your search terms or browse all ${activeTab} products`}
+          />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[...Array(8)].map((_, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 min-h-[480px] animate-pulse">
+                <div className="aspect-square bg-gray-200"></div>
+                <div className="p-5 space-y-3">
+                  <div className="h-6 bg-gray-200 rounded"></div>
+                  <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

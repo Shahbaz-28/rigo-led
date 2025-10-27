@@ -2,13 +2,19 @@
 
 import { useRouter } from "next/navigation"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import unifiedProductsData from "@/data/unified-products.json"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function TrendingSection() {
   const router = useRouter()
   const [loadingImages, setLoadingImages] = useState<Set<string>>(new Set())
+  const [isHydrated, setIsHydrated] = useState(false)
+
+  // Hydration check
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
 
   // Get all products from unified data
   const allProducts = unifiedProductsData.products
@@ -69,14 +75,14 @@ export default function TrendingSection() {
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 min-h-[480px]">
 
           {/* Image Container */}
-          <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+          {/* <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
             {/* Loading Skeleton */}
-            {isLoading && (
+            {/* {isLoading && (
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
-            )}
+            )} */}
 
             {/* Product Image */}
-            <div className="relative w-full h-full p-6 group-hover:p-4 transition-all duration-500">
+            {/* <div className="relative w-full h-full p-6 group-hover:p-4 transition-all duration-500">
               <Image
                 src={product.image || "/placeholder.svg"}
                 alt={product.title}
@@ -95,7 +101,7 @@ export default function TrendingSection() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
             </div>
-           </div>
+           </div> */}
 
           {/* Content Section */}
           <div className="p-6 space-y-3">
@@ -146,41 +152,64 @@ export default function TrendingSection() {
           </p>
         </div>
 
-        <Tabs defaultValue="indoor" className="w-full">
-          {/* Enhanced Tab Navigation */}
-          <TabsList className="grid w-full max-w-sm mx-auto grid-cols-2 mb-16 h-12 p-1 bg-gray-100 rounded-xl">
-            <TabsTrigger
-              value="indoor"
-              className="rounded-lg font-semibold text-sm transition-all duration-300 data-[state=active]:bg-white data-[state=active]:shadow-sm"
-            >
-              Indoor Collection
-            </TabsTrigger>
-            <TabsTrigger
-              value="outdoor"
-              className="rounded-lg font-semibold text-sm transition-all duration-300 data-[state=active]:bg-white data-[state=active]:shadow-sm"
-            >
-              Outdoor Collection
-            </TabsTrigger>
-          </TabsList>
+        {isHydrated ? (
+          <Tabs defaultValue="indoor" className="w-full">
+            {/* Enhanced Tab Navigation */}
+            <TabsList className="grid w-full max-w-sm mx-auto grid-cols-2 mb-16 h-12 p-1 bg-gray-100 rounded-xl">
+              <TabsTrigger
+                value="indoor"
+                className="rounded-lg font-semibold text-sm transition-all duration-300 data-[state=active]:bg-white data-[state=active]:shadow-sm"
+              >
+                Indoor Collection
+              </TabsTrigger>
+              <TabsTrigger
+                value="outdoor"
+                className="rounded-lg font-semibold text-sm transition-all duration-300 data-[state=active]:bg-white data-[state=active]:shadow-sm"
+              >
+                Outdoor Collection
+              </TabsTrigger>
+            </TabsList>
 
-          {/* Indoor Products Grid */}
-          <TabsContent value="indoor" className="mt-0">
+            {/* Indoor Products Grid */}
+            <TabsContent value="indoor" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {[...indoorProducts].slice(0, 4).map((product) => (
+                  <ProductCard key={product.id} product={product} isOutdoor={false} />
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* Outdoor Products Grid */}
+            <TabsContent value="outdoor" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {outdoorProducts.map((product: any) => (
+                  <ProductCard key={product.id} product={product} isOutdoor={true} />
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
+        ) : (
+          <div className="space-y-8">
+            <div className="flex justify-center">
+              <div className="grid w-full max-w-sm mx-auto grid-cols-2 h-12 p-1 bg-gray-100 rounded-xl">
+                <div className="h-10 bg-gray-200 rounded-lg animate-pulse"></div>
+                <div className="h-10 bg-gray-200 rounded-lg animate-pulse"></div>
+              </div>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {[...indoorProducts].slice(0, 4).map((product) => (
-                <ProductCard key={product.id} product={product} isOutdoor={false} />
+              {[...Array(4)].map((_, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 min-h-[480px] animate-pulse">
+                  <div className="aspect-square bg-gray-200"></div>
+                  <div className="p-5 space-y-3">
+                    <div className="h-6 bg-gray-200 rounded"></div>
+                    <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+                    <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                  </div>
+                </div>
               ))}
             </div>
-          </TabsContent>
-
-          {/* Outdoor Products Grid */}
-          <TabsContent value="outdoor" className="mt-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {outdoorProducts.map((product: any) => (
-                <ProductCard key={product.id} product={product} isOutdoor={true} />
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+          </div>
+        )}
 
         {/* Enhanced CTA Button */}
         <div className="text-center mt-16">

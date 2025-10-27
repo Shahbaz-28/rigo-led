@@ -100,17 +100,17 @@ export default function ProductDetails() {
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse rounded-3xl" />
               )}
 
-              <div className="relative w-full h-full p-8">
+              {/* <div className="relative w-full h-full p-8">
                 <Image
                   src={productImages[selectedImageIndex]?.src || "/placeholder.svg"}
                   alt={productImages[selectedImageIndex]?.alt || product.title}
                   fill
                   className={`object-cover transition-all duration-500 ${imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                     }`}
-                  onLoadingComplete={() => setImageLoaded(true)}
+                  onLoad={() => setImageLoaded(true)}
                   priority
                 />
-              </div>
+              </div> */}
 
               {/* Image Counter */}
               {productImages.length > 1 && (
@@ -121,7 +121,7 @@ export default function ProductDetails() {
             </div>
 
             {/* Horizontal Thumbnail Strip */}
-            {productImages.length > 1 && (
+            {/* {productImages.length > 1 && (
               <div className="flex space-x-3 overflow-x-auto p-[1rem] scrollbar-hide" style={{ scrollbarWidth: "none" }} >
                 {productImages.map((image, index) => (
                   <button
@@ -141,7 +141,7 @@ export default function ProductDetails() {
                   </button>
                 ))}
               </div>
-            )}
+            )} */}
 
             {/* Product Quick Info - Only visible on desktop when sticky */}
             {/* <div className="hidden lg:block bg-gray-50 rounded-2xl p-6 mt-6">
@@ -245,17 +245,17 @@ export default function ProductDetails() {
                   {/* Handle items array separately */}
                   {product.specifications.items ? (
                     <div className="space-y-6">
-                      {product.specifications.items.map((item, index) => (
-                        <div key={item.item_no || index} className="border border-gray-100 rounded-lg p-4">
-                          <h4 className="font-semibold text-gray-900 mb-3">{item.item_no}</h4>
+                      {product.specifications.items.map((item: any, index: number) => (
+                        <div key={item.item_no || item["Modal No"] || index} className="border border-gray-100 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-900 mb-3">{item.item_no || item["Modal No"] || `Item ${index + 1}`}</h4>
                           <div className="grid grid-cols-1 gap-3">
                             {Object.entries(item).map(([key, value]) => {
-                              if (!value || key === 'item_no') return null
+                              if (!value || key === 'item_no' || key === 'Modal No') return null
                               const label = key.replace(/_/g, ' ').toUpperCase()
                               return (
                                 <div key={key} className="flex justify-between">
                                   <span className="text-gray-600 font-medium">{label}:</span>
-                                  <span className="text-gray-900">{value}</span>
+                                  <span className="text-gray-900">{value as string}</span>
                                 </div>
                               )
                             })}
