@@ -309,7 +309,7 @@ export default function ProductDetails() {
         </div>
 
         {/* Related Products */}
-        {(() => {
+        {/* {(() => {
           const allProducts = unifiedProductsData.products
           const sameTabProducts = allProducts.filter(p => p.tab === product.tab && p.id !== product.id)
 
@@ -328,7 +328,7 @@ export default function ProductDetails() {
               </h3>
 
               {/* Horizontal Scroll for All Devices */}
-              <div className="overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              {/* <div className="overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 <div className="flex space-x-4 pb-4">
                   {relatedProducts.map((relatedProduct) => (
                     <div
@@ -362,7 +362,7 @@ export default function ProductDetails() {
               </div>
             </div>
           )
-        })()}
+        })()} */}
       </div>
 
       {/* Related Products Section - Mobile Responsive */}

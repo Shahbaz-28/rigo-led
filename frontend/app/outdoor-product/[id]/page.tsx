@@ -252,12 +252,12 @@ export default function OutdoorProductDetails() {
                   {/* Handle items array separately */}
                   {product.specifications.items ? (
                     <div className="space-y-6">
-                      {product.specifications.items.map((item, index) => (
-                        <div key={item.item_no || index} className="border border-gray-100 rounded-lg p-4">
-                          <h4 className="font-semibold text-gray-900 mb-3">{item.item_no}</h4>
+                      {product.specifications.items.map((item: any, index: number) => (
+                        <div key={item.item_no || item["Modal No"] || index} className="border border-gray-100 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-900 mb-3">{item.item_no || item["Modal No"] || `Item ${index + 1}`}</h4>
                           <div className="grid grid-cols-1 gap-3">
                             {Object.entries(item).map(([key, value]) => {
-                              if (!value || key === 'item_no') return null
+                              if (!value || key === 'item_no' || key === 'Modal No') return null
                               const label = key.replace(/_/g, ' ').toUpperCase()
                               return (
                                 <div key={key} className="flex justify-between py-3 border-b border-gray-100">
@@ -265,7 +265,7 @@ export default function OutdoorProductDetails() {
                                     {label}
                                   </span>
                                   <span className="text-gray-900 font-semibold text-sm text-right">
-                                    {value}
+                                    {value as string}
                                   </span>
                                 </div>
                               )
@@ -329,7 +329,7 @@ export default function OutdoorProductDetails() {
           </div>
         </div>
         {/* Related Products */}
-        {(() => {
+        {/* {(() => {
           const allProducts = unifiedProductsData.products
           const sameTabProducts = allProducts.filter(p => p.tab === product.tab && p.id !== product.id)
           
@@ -348,7 +348,7 @@ export default function OutdoorProductDetails() {
               </h3>
               
               {/* Horizontal Scroll for All Devices */}
-              <div className="overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              {/* <div className="overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 <div className="flex space-x-4 pb-4">
                   {relatedProducts.map((relatedProduct) => (
                     <div
@@ -382,7 +382,7 @@ export default function OutdoorProductDetails() {
               </div>
             </div>
           )
-        })()}
+        })()} */}
 
       </div>
     </div>
