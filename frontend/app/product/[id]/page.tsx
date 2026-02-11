@@ -92,25 +92,25 @@ export default function ProductDetails() {
       <div className="max-w-7xl mx-auto px-3 py-8 md:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
 
-          {/* Fixed Image Gallery Section - Desktop Only */}
+          {/* Fixed Image Gallery Section */}
           <div className="space-y-6 lg:sticky lg:top-24 lg:h-fit">
             {/* Main Image */}
-            <div className="relative aspect-square bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="relative w-full max-w-3xl mx-auto aspect-[4/3] bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
               {isLoading && (
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse rounded-3xl" />
               )}
 
-              {/* <div className="relative w-full h-full p-8">
+              <div className="relative w-full h-full p-4 md:p-6">
                 <Image
                   src={productImages[selectedImageIndex]?.src || "/placeholder.svg"}
                   alt={productImages[selectedImageIndex]?.alt || product.title}
                   fill
-                  className={`object-cover transition-all duration-500 ${imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                  className={`object-contain transition-all duration-500 ${imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                     }`}
                   onLoad={() => setImageLoaded(true)}
                   priority
                 />
-              </div> */}
+              </div>
 
               {/* Image Counter */}
               {productImages.length > 1 && (
@@ -121,7 +121,7 @@ export default function ProductDetails() {
             </div>
 
             {/* Horizontal Thumbnail Strip */}
-            {/* {productImages.length > 1 && (
+            {productImages.length > 1 && (
               <div className="flex space-x-3 overflow-x-auto p-[1rem] scrollbar-hide" style={{ scrollbarWidth: "none" }} >
                 {productImages.map((image, index) => (
                   <button
@@ -141,7 +141,7 @@ export default function ProductDetails() {
                   </button>
                 ))}
               </div>
-            )} */}
+            )}
 
             {/* Product Quick Info - Only visible on desktop when sticky */}
             {/* <div className="hidden lg:block bg-gray-50 rounded-2xl p-6 mt-6">

@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation"
 import { ArrowLeft, Heart, MessageCircle, Star, Share2, ShoppingCart, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import unifiedProductsData from "@/data/unified-products.json"
+import outdoorData from "@/data/outdoor.json"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
@@ -11,11 +11,38 @@ export default function OutdoorProductDetails() {
   const params = useParams()
   const router = useRouter()
   const productId = Number.parseInt(params.id as string)
-  const product = unifiedProductsData.products.find(p => p.id === productId)
+  const product = outdoorData.products.find((p: any) => p.id === productId)
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
   const [imageLoaded, setImageLoaded] = useState(false)
+
+  // Specifications table helpers
+  const specItems = (product?.specifications as any)?.items || []
+  const specFieldConfig = [
+    { key: "Power", label: "Power" },
+    { key: "Lumen", label: "Lumen" },
+    { key: "Input Voltage", label: "Input Voltage" },
+    { key: "Driver", label: "Driver" },
+    { key: "Power Factor", label: "Power Factor" },
+    { key: "CCT", label: "CCT" },
+    { key: "CRI", label: "CRI" },
+    { key: "Luminous Efficiency", label: "Luminous Efficiency" },
+    { key: "LED Chips", label: "LED Chips" },
+    { key: "IP Grade", label: "IP Grade" },
+    { key: "Beam Angle", label: "Beam Angle" },
+    { key: "Material", label: "Material" },
+    { key: "Working Temperature", label: "Working Temperature" },
+    { key: "Lifespan", label: "Lifespan" },
+    { key: "Warranty", label: "Warranty" },
+  ]
+
+  const dimensionFieldConfig = [
+    { key: "Power", label: "Power" },
+    { key: "Body Dimension mm", label: "Body Dimension (mm)" },
+    { key: "Driver Dimension mm", label: "Driver Dimension (mm)" },
+    { key: "PCB Size mm", label: "PCB Size (mm)" },
+  ]
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 500)
@@ -90,27 +117,27 @@ export default function OutdoorProductDetails() {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="flex flex-col gap-12 lg:gap-16">
 
-          {/* Fixed Image Gallery Section - Desktop Only */}
-          <div className="space-y-6 lg:sticky lg:top-24 lg:h-fit">
+          {/* Image Gallery Section */}
+          <div className="space-y-6">
             {/* Main Image */}
-            <div className="relative aspect-square bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="relative w-full max-w-3xl mx-auto aspect-[4/3] bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
               {isLoading && (
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse rounded-3xl" />
               )}
 
-              {/* <div className="relative w-full h-full p-8">
+              <div className="relative w-full h-full p-4 md:p-6">
                 <Image
                   src={productImages[selectedImageIndex]?.src || "/placeholder.svg"}
                   alt={productImages[selectedImageIndex]?.alt || product.title}
                   fill
-                  className={`object-cover rounded-2xl transition-all duration-500 ${imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                  className={`object-contain rounded-2xl transition-all duration-500 ${imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                     }`}
                   onLoad={() => setImageLoaded(true)}
                   priority
                 />
-              </div> */}
+              </div>
 
               {/* Image Counter */}
               {productImages.length > 1 && (
@@ -121,7 +148,7 @@ export default function OutdoorProductDetails() {
             </div>
 
             {/* Horizontal Thumbnail Strip */}
-            {/* {productImages.length > 1 && (
+            {productImages.length > 1 && (
               <div className="flex space-x-3 overflow-x-auto py-4 px-2 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {productImages.map((image, index) => (
                   <button
@@ -141,7 +168,7 @@ export default function OutdoorProductDetails() {
                   </button>
                 ))}
               </div>
-            )} */}
+            )}
 
             {/* Product Quick Info - Only visible on desktop when sticky */}
             {/* <div className="hidden lg:block bg-gray-50 rounded-2xl p-6">
@@ -225,6 +252,48 @@ export default function OutdoorProductDetails() {
               </p>
             </div>
 
+            {/* High-level Specification bullets (above Key Features) */}
+            {product.specifications && (
+              <div className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200">
+                <div className="inline-flex items-center px-4 py-1 mb-4 rounded-full bg-blue-600 text-white text-sm font-semibold">
+                  Specification
+                </div>
+                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700">
+                  {product.specifications.power && (
+                    <li>
+                      <span className="font-semibold">Power:</span> {product.specifications.power}
+                    </li>
+                  )}
+                  {product.specifications.voltage && (
+                    <li>
+                      <span className="font-semibold">Voltage:</span> {product.specifications.voltage}
+                    </li>
+                  )}
+                  {product.specifications.leds && (
+                    <li>
+                      <span className="font-semibold">LEDs:</span> {product.specifications.leds}
+                    </li>
+                  )}
+                  {product.specifications.ip_rating && (
+                    <li>
+                      <span className="font-semibold">IP Rating:</span> {product.specifications.ip_rating}
+                    </li>
+                  )}
+                  {product.specifications.lifespan_and_warranty && (
+                    <li>
+                      <span className="font-semibold">Lifespan &amp; Warranty:</span>{" "}
+                      {product.specifications.lifespan_and_warranty}
+                    </li>
+                  )}
+                  {(product.specifications as any).certification && (
+                    <li>
+                      <span className="font-semibold">Certification:</span> {(product.specifications as any).certification}
+                    </li>
+                  )}
+                </ul>
+              </div>
+            )}
+
             {/* Key Features - Minimalistic Design */}
             {product.features && product.features.length > 0 && (
               <div className="bg-white rounded-2xl p-6 border border-gray-200">
@@ -242,74 +311,95 @@ export default function OutdoorProductDetails() {
               </div>
             )}
 
-            {/* Specifications */}
-            {product.specifications && (
-              <div className="bg-white rounded-2xl p-6 border border-gray-200">
+            {/* Specifications - rendered as comparison table */}
+            {product.specifications && specItems.length > 0 && (
+              <div className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 max-w-5xl mx-auto">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">
                   Technical Specifications
                 </h3>
-                <div className="space-y-4">
-                  {/* Handle items array separately */}
-                  {product.specifications.items ? (
-                    <div className="space-y-6">
-                      {product.specifications.items.map((item: any, index: number) => (
-                        <div key={item.item_no || item["Modal No"] || index} className="border border-gray-100 rounded-lg p-4">
-                          <h4 className="font-semibold text-gray-900 mb-3">{item.item_no || item["Modal No"] || `Item ${index + 1}`}</h4>
-                          <div className="grid grid-cols-1 gap-3">
-                            {Object.entries(item).map(([key, value]) => {
-                              if (!value || key === 'item_no' || key === 'Modal No') return null
-                              const label = key.replace(/_/g, ' ').toUpperCase()
-                              return (
-                                <div key={key} className="flex justify-between py-3 border-b border-gray-100">
-                                  <span className="text-gray-600 font-medium text-sm flex-shrink-0 pr-4 min-w-[120px]">
-                                    {label}
-                                  </span>
-                                  <span className="text-gray-900 font-semibold text-sm text-right">
-                                    {value as string}
-                                  </span>
-                                </div>
-                              )
-                            })}
-                          </div>
-                        </div>
-                      ))}
 
-                      {/* Render top-level specs like warranty when items array exists */}
-                      <div className="space-y-4">
-                        {Object.entries(product.specifications).map(([key, value]) => {
-                          if (!value || key === 'items') return null
-                          const label = key.replace(/_/g, ' ').toUpperCase()
-                          return (
-                            <div key={key} className="flex justify-between items-start py-3 border-b border-gray-100 last:border-b-0">
-                              <span className="text-gray-600 font-medium text-sm flex-shrink-0 pr-4 min-w-[120px]">
-                                {label}
-                              </span>
-                              <span className="text-gray-900 font-semibold text-sm text-right">
-                                {value}
-                              </span>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="space-y-4">
-                      {Object.entries(product.specifications).map(([key, value]) => {
-                        if (!value) return null
-                        const label = key.replace(/_/g, ' ').toUpperCase()
-                        return (
-                          <div key={key} className="flex justify-between items-start py-3 border-b border-gray-100 last:border-b-0">
-                            <span className="text-gray-600 font-medium text-sm flex-shrink-0 pr-4 min-w-[120px]">
-                              {label}
-                            </span>
-                            <span className="text-gray-900 font-semibold text-sm text-right">
-                              {value}
-                            </span>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  )}
+                <div className="overflow-x-auto">
+                  <table className="w-full max-w-5xl mx-auto text-[10px] md:text-xs border border-gray-200 table-fixed">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="px-2 md:px-3 py-1.5 md:py-2 border-r border-gray-200 text-left font-semibold text-gray-700">
+                          Model
+                        </th>
+                        {specItems.map((item: any, index: number) => (
+                          <th
+                            key={item["Modal No"] || index}
+                            className="px-2 md:px-3 py-1.5 md:py-2 border-r border-gray-200 text-center font-semibold text-gray-700"
+                          >
+                            {item["Modal No"] || `Model ${index + 1}`}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {specFieldConfig.map((row) => (
+                        <tr key={row.key} className="odd:bg-white even:bg-gray-50">
+                          <td className="px-2 md:px-3 py-1.5 md:py-2 border-t border-r border-gray-200 font-semibold text-gray-800">
+                            {row.label}
+                          </td>
+                          {specItems.map((item: any, index: number) => (
+                            <td
+                              key={`${index}-${row.key}`}
+                              className="px-2 md:px-3 py-1.5 md:py-2 border-t border-r border-gray-200 text-center text-gray-700 break-words"
+                            >
+                              {item[row.key] || "—"}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            )}
+
+            {/* Dimension table based on model-wise specs */}
+            {product.specifications && specItems.length > 0 && (
+              <div className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 max-w-5xl mx-auto">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Dimension
+                </h3>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full max-w-5xl mx-auto text-[10px] md:text-xs border border-gray-200 table-fixed">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="px-2 md:px-3 py-1.5 md:py-2 border-r border-gray-200 text-left font-semibold text-gray-700">
+                          Model
+                        </th>
+                        {specItems.map((item: any, index: number) => (
+                          <th
+                            key={item["Modal No"] || index}
+                            className="px-2 md:px-3 py-1.5 md:py-2 border-r border-gray-200 text-center font-semibold text-gray-700"
+                          >
+                            {item["Modal No"] || `Model ${index + 1}`}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {dimensionFieldConfig.map((row) => (
+                        <tr key={row.key} className="odd:bg-white even:bg-gray-50">
+                          <td className="px-2 md:px-3 py-1.5 md:py-2 border-t border-r border-gray-200 font-semibold text-gray-800">
+                            {row.label}
+                          </td>
+                          {specItems.map((item: any, index: number) => (
+                            <td
+                              key={`${index}-${row.key}`}
+                              className="px-2 md:px-3 py-1.5 md:py-2 border-t border-r border-gray-200 text-center text-gray-700 break-words"
+                            >
+                              {item[row.key] || "—"}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
             )}

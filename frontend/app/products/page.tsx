@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Search, Filter } from "lucide-react"
 import unifiedProductsData from "@/data/unified-products.json"
+import outdoorData from "@/data/outdoor.json"
 import Image from "next/image"
 
 export default function ProductsPage() {
@@ -33,16 +34,15 @@ export default function ProductsPage() {
     setSelectedCategory("All")
   }, [activeTab])
 
-  // Get all products from unified data
-  const allProducts = unifiedProductsData.products
+  // Get indoor products from unified data
+  const allIndoorProducts = unifiedProductsData.products
+  const indoorProducts = allIndoorProducts.filter(product => product.tab === 'indoor')
 
-  // Separate products by tab field
-  const indoorProducts = allProducts.filter(product => product.tab === 'indoor')
-  const outdoorProducts = allProducts.filter(product => product.tab === 'outdoor')
+  // Get outdoor products from dedicated outdoor data
+  const outdoorProducts = outdoorData.products
 
   const handleProductClick = (productId: number) => {
-    // Check if it's an outdoor product (ID >= 100)
-    if (productId >= 100) {
+    if (activeTab === 'outdoor') {
       router.push(`/outdoor-product/${productId}`)
     } else {
       router.push(`/product/${productId}`)
@@ -83,7 +83,7 @@ export default function ProductsPage() {
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 min-h-[480px] flex flex-col">
 
           {/* Image Container */}
-          {/* <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden flex items-center justify-center">
+          <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden flex items-center justify-center">
             {!imageLoaded && (
               <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
             )}
@@ -93,12 +93,12 @@ export default function ProductsPage() {
                 src={product.image || "/placeholder.svg"}
                 alt={product.title}
                 fill
-                className="object-cover rounded-xl transition-all duration-700"
+                className="object-contain rounded-xl transition-all duration-700"
                 onLoad={() => setImageLoaded(true)}
                 priority
               />
             </div>
-          </div> */}
+          </div>
 
           {/* Content Section */}
           <div className="p-5 flex flex-col flex-grow justify-between">

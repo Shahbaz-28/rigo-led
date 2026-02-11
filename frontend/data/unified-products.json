@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 2,
+      "id": 1,
       "title": "DECO SERIES (Concealed Panel)",
       "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
       "category": "Indoor LED Lighting",
@@ -10,12 +10,10 @@
       "price": 249.99,
       "originalPrice": 329.99,
       "discount": 24,
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/decoconseal.png",
       "images": [
-        "/images/products/platina series (1).png",
-        "/images/products/platina series (2).png",
-        "/images/products/platina series (3).png",
-        "/images/products/platina series (4).png"
+        "/images/indoor/decoconseal.png",
+        "/images/indoor/decoconseal2.png"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -38,6 +36,7 @@
              "Power Factor": "0.95",
              "Surge": "2.5KVA",
              "IP Rating": "IP20",
+             "Material": "Aluminium",
             "Warranty": "2 Years"
             
           }
@@ -45,8 +44,8 @@
       }
     },
     {
-      "id": 16,
-      "title": "Deco Series (Surface Panel)",
+      "id": 2,
+      "title": "DECO SERIES (Surface Panel)",
       "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
       "category": "Indoor LED Lighting",
       "type": "series",
@@ -54,12 +53,11 @@
       "price": 249.99,
       "originalPrice": 329.99,
       "discount": 24,
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/decosurface.png",
       "images": [
-        "/images/products/platina series (1).png",
-        "/images/products/platina series (2).png",
-        "/images/products/platina series (3).png",
-        "/images/products/platina series (4).png"
+        "/images/indoor/decosurface.png",
+        "/images/indoor/decosurface1.png",
+        "/images/indoor/decosurface2.png"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -79,7 +77,11 @@
             "Available Power Watt": "8 Watt/15 watt/22 Watt /30 Watt",
             "Shape": "Square/Round",
             "Color": "White/Natural White/ Warm White/ 3IN1",
-            "Warranty": "2 Years"
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium",
+           "Warranty": "2 Years"
           }
         ]
       }
@@ -120,6 +122,9 @@
             "Shape": "Square/Round",
             "Material": "PC",
             "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
             "Warranty": "2 Years"
           }
         ]
@@ -202,6 +207,9 @@
             "Shape": "Square/Round",
             "Material": "PC",
             "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
             "Warranty": "2 Years"
           }
         ]
@@ -284,6 +292,9 @@
             "Shape": "Square/Round",
             "Material": "Aluminium",
             "Color": "White+pgb|white+blue|white+pink ",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
             "Warranty": "2 Years"
           }
         ]
@@ -322,6 +333,9 @@
             "Shape": "Square/Round",
             "Material": "Aluminium",
             "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
             "Warranty": "2 Years"
           }
         ]
@@ -399,6 +413,9 @@
             "Material": "Aluminium",
             "Body Color": "White/Black",
             "Color": "White/Natural White/ Warm White/ 3IN1",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
             "Warranty": "2 Years"
           }
         ]
@@ -433,7 +450,11 @@
             "cut_out": "Φ50 mm",
             "body_color": "White/Black",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -442,7 +463,11 @@
             "cut_out": "Φ72 mm",
             "body_color": "White/Black",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -450,7 +475,11 @@
             "size": "Φ905*88 mm",
             "cut_out": "Φ80 mm",
             "body_color": "White/Black",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -493,7 +522,11 @@
             "cut_out": "Φ65 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -502,7 +535,11 @@
             "cut_out": "Φ75 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -511,7 +548,11 @@
             "cut_out": "Φ85 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -572,7 +613,7 @@
     },
     {
       "id": 14,
-      "title": " SERIES (CURVE COB)",
+      "title": " NEXUS SERIES (LENS COB)",
       "description": "Elegant LED lighting series with premium finish and excellent performance. Ideal for modern interiors and commercial spaces.",
       "category": "Indoor LED Lighting",
       "type": "series",
@@ -595,29 +636,41 @@
           {
             "Modal No": "RG-114",
             "power": "7Watt",
-            "size": "Φ70*50 mm",
+            "size": "Φ70*60 mm",
             "cut_out": "Φ65 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
             "power": "12WATT",
             "size": "Φ85*65 mm",
-            "cut_out": "Φ80 mm",
+            "cut_out": "Φ75 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
             "power": "18WATT",
             "size": "Φ95*75 mm",
-            "cut_out": "Φ90 mm",
+            "cut_out": "Φ85 mm",
             "body_color": "BK+GBK/RGD/CH/WH+GBK/RGD/CH",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -633,12 +686,10 @@
       "price": 299.99,
       "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/products/Nexus Series (1).png",
+      "image": "/images/products/dellaseries.png",
       "images": [
-        "/images/products/Nexus Series (1).png",
-        "/images/products/Nexus Series (2).png",
-        "/images/products/Nexus Series (3).png",
-        "/images/products/Nexus Series (4).png"
+       "/images/products/dellaseries.png",
+        "/images/products/dellaseries.png"   
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -659,7 +710,11 @@
             "cut_out": "Φ55 mm",
             "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -668,7 +723,11 @@
             "cut_out": "Φ75 mm",
             "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -677,7 +736,11 @@
             "cut_out": "Φ95 mm",
             "body_color": "BK+GBK/RGD/GD/WH+GBK/RGD/GD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -728,7 +791,11 @@
             "cut_out": "Φ75 mm",
             "body_color": "WH/BK/GBK/RGD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -737,7 +804,11 @@
             "cut_out": "Φ85 mm",
             "body_color": "WH/BK/GBK/RGD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -779,7 +850,11 @@
             "cut_out": "Φ60 mm",
             "body_color": "WH/BK/GBK/RGD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -788,7 +863,11 @@
             "cut_out": "Φ75 mm",
             "body_color": "WH/BK/GBK/RGD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -797,7 +876,11 @@
             "cut_out": "Φ85 mm",
             "body_color": "WH/BK/GBK/RGD",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -840,7 +923,11 @@
             "cut_out": "Φ55 mm",
             "body_color": "WH/GBK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -849,7 +936,11 @@
             "cut_out": "Φ65 mm",
             "body_color": "WH/GBK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -858,7 +949,11 @@
             "cut_out": "Φ78 mm",
             "body_color": "WH/GBK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -900,7 +995,11 @@
             "cut_out": "Φ45 mm",
             "body_color": "WH/BK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -909,7 +1008,11 @@
             "cut_out": "Φ55 mm",
             "body_color": "WH/BK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -918,7 +1021,11 @@
             "cut_out": "Φ75 mm",
             "body_color": "WH/GBK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
@@ -926,7 +1033,7 @@
     },
     {
       "id": 21,
-      "title": "DUCK SERIES",
+      "title": "RIO SERIES",
       "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
       "category": "Indoor LED Lighting",
       "type": "series",
@@ -960,7 +1067,11 @@
             "cut_out": "Φ45 mm",
             "body_color": "WH/BK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "24°"
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-12W",
@@ -969,7 +1080,11 @@
             "cut_out": "Φ55 mm",
             "body_color": "WH/BK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           },
           {
             "item_no": "RL.CB15-18W",
@@ -978,221 +1093,535 @@
             "cut_out": "Φ75 mm",
             "body_color": "WH/GBK",
             "color": "3k 4k 5k 6K 3IN1",
-            "beam_angle": "38°"
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
           }
         ],
         "warranty": "2 years"
       }
     },
     {
-      "id": 100,
-      "title": "FLOOD LIGHT BACK CHOKE HOUSING 50-60W",
-      "description": "Professional outdoor flood light housing with back choke design. Perfect for commercial and residential outdoor lighting applications.",
-      "category": "Outdoor Lighting",
-      "type": "housing",
-      "tab": "outdoor",
-      "price": 199.99,
-      "originalPrice": 249.99,
-      "discount": 20,
-      "image": "/images/products/outdoor/flood-light (1).png",
-      "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
-      ],
-      "rating": 4.5,
-      "reviews": 67,
-      "inStock": true,
-      "features": [
-        "Weather resistant design",
-        "Back choke configuration",
-        "50-60W power range",
-        "Durable aluminum construction",
-        "Easy installation"
-      ],
-      "specifications": {
-        "body_weight": "645 gm",
-        "frame_weight": "205 gm",
-        "driver_box_weight": "370 gm",
-        "total_casting_weight": "1.220 kg",
-        "pcb_size": "165 x 120 mm",
-        "driver_area": "155 x 90 x 55 mm",
-        "outer_dimensions": "265 x 205 x 115 mm",
-        "gross_weight": "1.830 kg",
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 101,
-      "title": "100W HIGH BAY SPIRAL LENS",
-      "description": "High-performance 100W high bay lighting with spiral lens design. Ideal for warehouses, factories, and large commercial spaces.",
-      "category": "Outdoor Lighting",
-      "type": "high_bay",
-      "tab": "outdoor",
-      "price": 349.99,
-      "originalPrice": 429.99,
-      "discount": 19,
-      "image": "/images/products/outdoor/flood-light (1).png",
-      "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
-      ],
-      "rating": 4.6,
-      "reviews": 43,
-      "inStock": true,
-      "features": [
-        "100W high power output",
-        "Spiral lens technology",
-        "Aluminum construction",
-        "Industrial grade",
-        "Energy efficient"
-      ],
-      "specifications": {
-        "material": "Aluminium",
-        "body_weight": "650g",
-        "power": "100W",
-        "lens_type": "Spiral",
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 102,
-      "title": "100W HIGH BAY SPIRAL LENS",
-      "description": "High-performance 100W high bay lighting with spiral lens design. Ideal for warehouses, factories, and large commercial spaces.",
-      "category": "Outdoor Lighting",
-      "type": "high_bay",
-      "tab": "outdoor",
-      "price": 349.99,
-      "originalPrice": 429.99,
-      "discount": 19,
-      "image": "/images/products/outdoor/flood-light (1).png",
-      "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
-      ],
-      "rating": 4.6,
-      "reviews": 43,
-      "inStock": true,
-      "features": [
-        "100W high power output",
-        "Spiral lens technology",
-        "Aluminum construction",
-        "Industrial grade",
-        "Energy efficient"
-      ],
-      "specifications": {
-        "material": "Aluminium",
-        "body_weight": "650g",
-        "power": "100W",
-        "lens_type": "Spiral",
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 103,
-      "title": "100W HIGH BAY SPIRAL LENS",
-      "description": "High-performance 100W high bay lighting with spiral lens design. Ideal for warehouses, factories, and large commercial spaces.",
-      "category": "Outdoor Lighting",
-      "type": "high_bay",
-      "tab": "outdoor",
-      "price": 349.99,
-      "originalPrice": 429.99,
-      "discount": 19,
-      "image": "/images/products/outdoor/flood-light (1).png",
-      "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
-      ],
-      "rating": 4.6,
-      "reviews": 43,
-      "inStock": true,
-      "features": [
-        "100W high power output",
-        "Spiral lens technology",
-        "Aluminum construction",
-        "Industrial grade",
-        "Energy efficient"
-      ],
-      "specifications": {
-        "material": "Aluminium",
-        "body_weight": "650g",
-        "power": "100W",
-        "lens_type": "Spiral",
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 17,
-      "title": "Vintage Industrial Pendant Light",
-      "description": "Beautiful vintage-style industrial pendant light with exposed bulb design. Perfect for dining rooms, kitchens, or as a statement piece in any room.",
-      "category": "Pendant Lights",
-      "type": "decorative",
+      "id": 21,
+      "title": "SPARK SERIES",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
       "tab": "indoor",
-      "price": 149.99,
-      "originalPrice": 199.99,
+      "price": 299.99,
+      "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/plainlight2.png",
+      "image": "/images/products/Nexus Series (1).png",
       "images": [
-        "/images/plainlight2.png",
-        "/images/plainlight.png",
-        "/images/lightimg2.jpg"
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
       ],
-      "rating": 4.6,
-      "reviews": 89,
-      "inStock": true,
-      "features": [
-        "Vintage industrial design",
-        "Exposed bulb aesthetic",
-        "Adjustable cord length",
-        "Easy installation",
-        "Compatible with various bulb types"
-      ],
-      "specifications": {
-        "power": "60W max",
-        "material": "Metal + Glass",
-        "cordLength": "Adjustable up to 120cm",
-        "dimensions": "Diameter: 25cm",
-        "warranty": "2 years"
-      }
-    },
-    {
-      "id": 18,
-      "title": "Contemporary Floor Lamp",
-      "description": "Elegant contemporary floor lamp with minimalist design. Features a curved arm and adjustable head for perfect lighting positioning.",
-      "category": "Floor Lamps",
-      "type": "decorative",
-      "tab": "indoor",
-      "price": 179.99,
-      "originalPrice": 249.99,
-      "discount": 28,
-      "image": "/images/lightimg.jpg",
-      "images": [
-        "/images/lightimg.jpg",
-        "/images/lightimg2.jpg",
-        "/images/plainlight.png"
-      ],
-      "rating": 4.7,
+      "rating": 4.8,
       "reviews": 156,
       "inStock": true,
       "features": [
-        "Minimalist contemporary design",
-        "Adjustable head",
-        "Curved arm design",
-        "Stable base",
-        "Easy assembly"
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
       ],
       "specifications": {
-        "power": "40W max",
-        "material": "Steel + Fabric",
-        "height": "160cm",
-        "baseDiameter": "35cm",
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "7Watt",
+            "size": "Φ53*61 mm",
+            "cut_out": "Φ45 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ63*71 mm",
+            "cut_out": "Φ55 mm",
+            "body_color": "WH/BK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ83*83 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH/GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 23,
+      "title": "VELA SERIES (COB CYLINDER LIGHT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "7Watt",
+            "size": "Φ58*72 mm",
+            "color": "3k 4k 5k 6K 3IN1",
+            "body_color": "BK+RGD/WH+GBK",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ72*88 mm",
+            "body_color": "BK+RGD/WH+GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ88*100 mm",
+            "body_color": "BK+RGD/WH+GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 24,
+      "title": "LUNA SERIES (MOVABLE COB CYLINDER LIGHT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "7Watt",
+            "size": "Φ58*84 mm",
+            "color": "3k 4k 5k 6K 3IN1",
+            "body_color": "BK+RGD/WH+GBK",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "12WATT",
+            "size": "Φ72*95 mm",
+            "body_color": "BK+RGD/WH+GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ86*110 mm",
+            "body_color": "BK+RGD/WH+GBK",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 25,
+      "title": "VIBE SERIES (COB DEEP SPOT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "3Watt",
+            "size": "Φ38*28 mm",
+            "cut_out": "Φ28 mm",
+            "color": "3k/4k/6K/BL/GR/PINK/RED",
+            "body_color": "WH/BK/GBK/RGD",
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 26,
+      "title": "SIGMA SERIES (MOVABLE COB LIGHT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (7W/12W/18W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "3Watt",
+            "size": "Φ65*32 mm",
+            "cut_out": "Φ55 mm",
+            "color": "3k 4k 5k 6K 3IN1",
+            "body_color": "WH",
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-12W",
+            "power": "7WATT",
+            "size": "Φ90*93 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "12WATT",
+            "size": "Φ90*53 mm",
+            "cut_out": "Φ75 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "38°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "18WATT",
+            "size": "Φ115*70 mm",
+            "cut_out": "Φ100 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "55°",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+            {
+              "item_no": "RL.CB15-18W",
+              "power": "24WATT",
+              "size": "Φ135*80 mm",
+              "cut_out": "Φ125 mm",
+              "body_color": "WH",
+              "color": "3k 4k 5k 6K 3IN1",
+              "beam_angle": "55°",
+              "Power Factor": "0.95",
+              "Surge": "4KVA",
+              "IP Rating": "IP20",
+              "Material": "Aluminium"
+            },
+            {
+              "item_no": "RL.CB15-18W",
+              "power": "30WATT",
+              "size": "Φ160*90 mm",
+              "cut_out": "Φ135 mm",
+              "body_color": "WH",
+              "color": "3k 4k 5k 6K 3IN1",
+              "beam_angle": "55°",
+              "Power Factor": "0.95",
+              "Surge": "4KVA",
+              "IP Rating": "IP20",
+              "Material": "Aluminium"
+            },
+            {
+              "item_no": "RL.CB15-18W",
+              "power": "50WATT",
+              "size": "Φ160*90 mm",
+              "cut_out": "Φ135 mm",
+              "body_color": "WH",
+              "color": "3k 4k 5k 6K 3IN1",
+              "beam_angle": "55°",
+              "Power Factor": "0.95",
+              "Surge": "4KVA",
+              "IP Rating": "IP20",
+              "Material": "Aluminium"
+            }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 28,
+      "title": "BLAZE (TRACK LIGHT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (10W/20W/30W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "10Watt",
+            "size": "Φ50*125 mm",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "Modal No": "RG-121",
+            "power": "20Watt",
+            "size": "Φ65*150 mm",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "Modal No": "RG-121",
+            "power": "30Watt",
+            "size": "Φ75*180 mm",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "36°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 29,
+      "title": "MAGIC SERIES (LINER SMD SPOT LIGHT)",
+      "description": "Professional LED lighting series with high-quality construction and versatile power options. Perfect for commercial and residential applications.",
+      "category": "Indoor LED Lighting",
+      "type": "series",
+      "tab": "indoor",
+      "price": 299.99,
+      "originalPrice": 399.99,
+      "discount": 25,
+      "image": "/images/products/Nexus Series (1).png",
+      "images": [
+        "/images/products/Nexus Series (1).png",
+        "/images/products/Nexus Series (2).png",
+        "/images/products/Nexus Series (3).png",
+        "/images/products/Nexus Series (4).png"
+      ],
+      "rating": 4.8,
+      "reviews": 156,
+      "inStock": true,
+      "features": [
+        "Multiple power options (10W/20W/30W)",
+        "Various body colors available",
+        "Professional beam angles",
+        "Compact design",
+        "Easy installation"
+      ],
+      "specifications": {
+        "items": [
+          {
+            "Modal No": "RG-121",
+            "power": "6Watt",
+            "size": "L-65MM, W-41MM, H-32MM",
+            "cut_out": "35x60MM",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+      
+          {
+            "Modal No": "RG-121",
+            "power": "12Watt",
+            "size": "L-144MM, W-41MM, H-32MM",
+            "cut_out": "35x138MM",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "Modal No": "RG-121",
+            "power": "24Watt",
+            "size": "L-276MM, W-41MM, H-32MM",
+            "cut_out": "35x272MM",
+            "color": "3k/4k/6K",
+            "body_color": "WH/BK",
+            "beam_angle": "24°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
+        ],
         "warranty": "2 years"
       }
     }
