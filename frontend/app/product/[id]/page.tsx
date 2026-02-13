@@ -89,7 +89,7 @@ export default function ProductDetails() {
       </header>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-3 py-8 md:px-4">
+      <div className="max-w-7xl mx-auto px-3 pt-10 pb-8 md:px-4 md:pt-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
 
           {/* Fixed Image Gallery Section */}

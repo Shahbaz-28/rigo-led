@@ -42,6 +42,7 @@ export default function OutdoorProductDetails() {
     { key: "Body Dimension mm", label: "Body Dimension (mm)" },
     { key: "Driver Dimension mm", label: "Driver Dimension (mm)" },
     { key: "PCB Size mm", label: "PCB Size (mm)" },
+    { key: "Pipe ID mm", label: "Pipe ID (mm)" },
   ]
 
   useEffect(() => {
@@ -116,7 +117,7 @@ export default function OutdoorProductDetails() {
       </header>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-4 pt-10 pb-8 md:pt-14">
         <div className="flex flex-col gap-12 lg:gap-16">
 
           {/* Image Gallery Section */}
