@@ -33,12 +33,11 @@
             "Available Power Watt": "4 Watt/8 Watt/12 Watt/15 watt/18 Watt/22 Watt /30 Watt",
             "Shape": "Square/Round",
             "Color": "White/Natural White/ Warm White/ 3IN1",
-             "Power Factor": "0.95",
-             "Surge": "2.5KVA",
-             "IP Rating": "IP20",
-             "Material": "Aluminium",
+            "Power Factor": "0.95",
+            "Surge": "2.5KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium",
             "Warranty": "2 Years"
-            
           }
         ]
       }
@@ -81,7 +80,7 @@
             "Surge": "2.5KVA",
             "IP Rating": "IP20",
             "Material": "Aluminium",
-           "Warranty": "2 Years"
+            "Warranty": "2 Years"
           }
         ]
       }
@@ -235,7 +234,7 @@
       "rating": 4.6,
       "reviews": 134,
       "inStock": true,
- "features": [
+      "features": [
         "Dust Proof",
         "Durable",
         "Economical",
@@ -276,7 +275,7 @@
       "rating": 4.6,
       "reviews": 134,
       "inStock": true,
- "features": [
+      "features": [
         "Dust Proof",
         "Durable",
         "Economical",
@@ -311,9 +310,7 @@
       "originalPrice": 329.99,
       "discount": 24,
       "image": "/images/products/platina series (1).png",
-      "images": [
-    
-      ],
+      "images": [],
       "rating": 4.7,
       "reviews": 89,
       "inStock": true,
@@ -352,9 +349,7 @@
       "originalPrice": 329.99,
       "discount": 24,
       "image": "/images/products/platina series (1).png",
-      "images": [
-    
-      ],
+      "images": [],
       "rating": 4.7,
       "reviews": 89,
       "inStock": true,
@@ -390,9 +385,7 @@
       "originalPrice": 329.99,
       "discount": 24,
       "image": "/images/products/platina series (1).png",
-      "images": [
-    
-      ],
+      "images": [],
       "rating": 4.7,
       "reviews": 89,
       "inStock": true,
@@ -428,9 +421,16 @@
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/alpha (1).jpg",
       "images": [
-    
+        "/images/indoor/alpha (1).jpg",
+        "/images/indoor/alpha (2).jpg",
+        "/images/indoor/alpha (3).jpg",
+        "/images/indoor/alpha (4).jpg",
+        "/images/indoor/alpha (5).jpg",
+        "/images/indoor/alpha (6).jpg",
+        "/images/indoor/alpha (7).jpg",
+        "/images/indoor/alpha (8).jpg"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -500,9 +500,14 @@
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/adore (1).jpg",
       "images": [
-    
+        "/images/indoor/adore (1).jpg",
+        "/images/indoor/adore (2).jpg",
+        "/images/indoor/adore (3).jpg",
+        "/images/indoor/adore (4).jpg",
+        "/images/indoor/adore (5).jpg",
+        "/images/indoor/adore (6).jpg"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -565,9 +570,18 @@
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/fusion (1).JPG",
       "images": [
-    
+        "/images/indoor/fusion (1).JPG",
+        "/images/indoor/fusion (2).JPG",
+        "/images/indoor/fusion (3).jpg",
+        "/images/indoor/fusion (4).jpg",
+        "/images/indoor/fusion (5).JPG",
+        "/images/indoor/fusion (6).JPG",
+        "/images/indoor/fusion (7).JPG",
+        "/images/indoor/fusion (8).JPG",
+        "/images/indoor/fusion (9).JPG",
+        "/images/indoor/fusion (10).JPG"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -618,9 +632,14 @@
       "category": "Indoor LED Lighting",
       "type": "series",
       "tab": "indoor",
-      "image": "/images/products/platina series (1).png",
+      "image": "/images/indoor/nexus1.JPG",
       "images": [
-    
+        "/images/indoor/nexus1.JPG",
+        "/images/indoor/nexus2.JPG",
+        "/images/indoor/nexus3.JPG",
+        "/images/indoor/nexus4.JPG",
+        "/images/indoor/nexus5.jpg",
+        "/images/indoor/nexus6.jpg"
       ],
       "rating": 4.7,
       "reviews": 89,
@@ -688,8 +707,8 @@
       "discount": 25,
       "image": "/images/products/dellaseries.png",
       "images": [
-       "/images/products/dellaseries.png",
-        "/images/products/dellaseries.png"   
+        "/images/products/dellaseries.png",
+        "/images/products/dellaseries.png"
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -756,12 +775,15 @@
       "price": 299.99,
       "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/products/Nexus Series (1).png",
+      "image": "/images/indoor/foria (1).JPG",
       "images": [
-        "/images/products/Nexus Series (1).png",
-        "/images/products/Nexus Series (2).png",
-        "/images/products/Nexus Series (3).png",
-        "/images/products/Nexus Series (4).png"
+        "/images/indoor/foria (1).JPG",
+        "/images/indoor/foria (2).JPG",
+        "/images/indoor/foria (3).JPG",
+        "/images/indoor/foria (4).JPG",
+        "/images/indoor/foria (5).JPG",
+        "/images/indoor/foria (6).JPG",
+        "/images/indoor/foria (7).JPG"
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -824,12 +846,16 @@
       "price": 299.99,
       "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/products/Nexus Series (1).png",
+      "image": "/images/indoor/foriapro (1).JPG",
       "images": [
-        "/images/products/Nexus Series (1).png",
-        "/images/products/Nexus Series (2).png",
-        "/images/products/Nexus Series (3).png",
-        "/images/products/Nexus Series (4).png"
+        "/images/indoor/foriapro (1).JPG",
+        "/images/indoor/foriapro (2).JPG",
+        "/images/indoor/foriapro (3).JPG",
+        "/images/indoor/foriapro (4).JPG",
+        "/images/indoor/foriapro (5).JPG",
+        "/images/indoor/foriapro (6).JPG",
+        "/images/indoor/foriapro (7).JPG",
+        "/images/indoor/foriapro (8).JPG"
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -885,7 +911,6 @@
         ],
         "warranty": "2 years"
       }
-
     },
     {
       "id": 19,
@@ -1254,12 +1279,20 @@
       "price": 299.99,
       "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/products/Nexus Series (1).png",
+      "image": "/images/indoor/luna (1).JPG",
       "images": [
-        "/images/products/Nexus Series (1).png",
-        "/images/products/Nexus Series (2).png",
-        "/images/products/Nexus Series (3).png",
-        "/images/products/Nexus Series (4).png"
+        "/images/indoor/luna (1).JPG",
+        "/images/indoor/luna (2).JPG",
+        "/images/indoor/luna (3).JPG",
+        "/images/indoor/luna (4).JPG",
+        "/images/indoor/luna (5).JPG",
+        "/images/indoor/luna (6).JPG",
+        "/images/indoor/luna (7).JPG",
+        "/images/indoor/luna (8).JPG",
+        "/images/indoor/luna (9).JPG",
+        "/images/indoor/luna (10).JPG",
+        "/images/indoor/luna (11).JPG",
+        "/images/indoor/luna (12).JPG"
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -1369,12 +1402,14 @@
       "price": 299.99,
       "originalPrice": 399.99,
       "discount": 25,
-      "image": "/images/products/Nexus Series (1).png",
+      "image": "/images/indoor/sigma (1).JPG",
       "images": [
-        "/images/products/Nexus Series (1).png",
-        "/images/products/Nexus Series (2).png",
-        "/images/products/Nexus Series (3).png",
-        "/images/products/Nexus Series (4).png"
+        "/images/indoor/sigma (1).JPG",
+        "/images/indoor/sigma (2).JPG",
+        "/images/indoor/sigma (3).JPG",
+        "/images/indoor/sigma (4).JPG",
+        "/images/indoor/sigma (5).JPG",
+        "/images/indoor/sigma (6).JPG"
       ],
       "rating": 4.8,
       "reviews": 156,
@@ -1440,45 +1475,45 @@
             "IP Rating": "IP20",
             "Material": "Aluminium"
           },
-            {
-              "item_no": "RL.CB15-18W",
-              "power": "24WATT",
-              "size": "Φ135*80 mm",
-              "cut_out": "Φ125 mm",
-              "body_color": "WH",
-              "color": "3k 4k 5k 6K 3IN1",
-              "beam_angle": "55°",
-              "Power Factor": "0.95",
-              "Surge": "4KVA",
-              "IP Rating": "IP20",
-              "Material": "Aluminium"
-            },
-            {
-              "item_no": "RL.CB15-18W",
-              "power": "30WATT",
-              "size": "Φ160*90 mm",
-              "cut_out": "Φ135 mm",
-              "body_color": "WH",
-              "color": "3k 4k 5k 6K 3IN1",
-              "beam_angle": "55°",
-              "Power Factor": "0.95",
-              "Surge": "4KVA",
-              "IP Rating": "IP20",
-              "Material": "Aluminium"
-            },
-            {
-              "item_no": "RL.CB15-18W",
-              "power": "50WATT",
-              "size": "Φ160*90 mm",
-              "cut_out": "Φ135 mm",
-              "body_color": "WH",
-              "color": "3k 4k 5k 6K 3IN1",
-              "beam_angle": "55°",
-              "Power Factor": "0.95",
-              "Surge": "4KVA",
-              "IP Rating": "IP20",
-              "Material": "Aluminium"
-            }
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "24WATT",
+            "size": "Φ135*80 mm",
+            "cut_out": "Φ125 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "55°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "30WATT",
+            "size": "Φ160*90 mm",
+            "cut_out": "Φ135 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "55°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          },
+          {
+            "item_no": "RL.CB15-18W",
+            "power": "50WATT",
+            "size": "Φ160*90 mm",
+            "cut_out": "Φ135 mm",
+            "body_color": "WH",
+            "color": "3k 4k 5k 6K 3IN1",
+            "beam_angle": "55°",
+            "Power Factor": "0.95",
+            "Surge": "4KVA",
+            "IP Rating": "IP20",
+            "Material": "Aluminium"
+          }
         ],
         "warranty": "2 years"
       }
@@ -1594,7 +1629,6 @@
             "IP Rating": "IP20",
             "Material": "Aluminium"
           },
-      
           {
             "Modal No": "RG-121",
             "power": "12Watt",
