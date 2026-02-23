@@ -7,12 +7,11 @@
       "category": "Outdoor Lighting",
       "type": "flood-light",
       "tab": "outdoor",
-      "image": "/images/products/outdoor/flood-light (1).png",
+      "image": "/images/outdoor/30WUNIK.jpeg",
       "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
+        "/images/outdoor/30WUNIK.jpeg",
+        "/images/outdoor/100WUNIK.jpeg",
+        "/images/outdoor/200WUNIK.jpeg"
       ],
       "features": [
         "Integrated reflector and heat sink, free of screw fixing.",
@@ -164,12 +163,15 @@
       "category": "Outdoor Lighting",
       "type": "flood-light",
       "tab": "outdoor",
-      "image": "/images/products/outdoor/flood-light (1).png",
+      "image": "/images/outdoor/50WSTAR.jpeg",
       "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
+        "/images/outdoor/50WSTAR.jpeg",
+        "/images/outdoor/50WSTAR (1).jpeg",
+        "/images/outdoor/100WSTAR.jpeg",
+        "/images/outdoor/100WSTAR (1).jpeg",
+        "/images/outdoor/100WSTAR (2).jpeg",
+        "/images/outdoor/150WSTAR.jpeg",
+        "/images/outdoor/150WSTAR (1).jpeg"
       ],
       "features": [
         "Integrated reflector and heat sink, free of screw fixing.",
@@ -300,12 +302,14 @@
       "category": "Outdoor Lighting",
       "type": "flood-light",
       "tab": "outdoor",
-      "image": "/images/products/outdoor/flood-light (1).png",
+      "image": "/images/outdoor/50WOPTIX.jpeg",
       "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
+        "/images/outdoor/50WOPTIX.jpeg",
+        "/images/outdoor/100WOPTIX.jpeg",
+        "/images/outdoor/100WOPTIX (1).jpeg",
+        "/images/outdoor/100WOPTIX (2).jpeg",
+        "/images/outdoor/150WOPTIX.jpeg",
+        "/images/outdoor/150WOPTIX (1).jpeg"
       ],
       "features": [
         "Integrated reflector and heat sink, free of screw fixing.",
@@ -603,12 +607,19 @@
       "category": "Outdoor Lighting",
       "type": "flood-light",
       "tab": "outdoor",
-      "image": "/images/products/outdoor/flood-light (1).png",
+      "image": "/images/outdoor/24WGALAXY.jpeg",
       "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
+        "/images/outdoor/24WGALAXY.jpeg",
+        "/images/outdoor/24WGALAXY (1).jpeg",
+        "/images/outdoor/24WGALAXY (2).jpeg",
+        "/images/outdoor/36WGALAXY.jpeg",
+        "/images/outdoor/36WGALAXY (1).jpeg",
+        "/images/outdoor/50WGALAXY.jpeg",
+        "/images/outdoor/50WGALAXY (1).jpeg",
+        "/images/outdoor/50WGALAXY (2).jpeg",
+        "/images/outdoor/100WGALAXY.jpeg",
+        "/images/outdoor/100WGALAXY (1).jpeg",
+        "/images/outdoor/100WGALAXY (2).jpeg"
       ],
       "features": [
         "Integrated reflector and heat sink, free of screw fixing.",
@@ -722,12 +733,20 @@
       "category": "Outdoor Lighting",
       "type": "flood-light",
       "tab": "outdoor",
-      "image": "/images/products/outdoor/flood-light (1).png",
+      "image": "/images/outdoor/24WLENCY.jpeg",
       "images": [
-        "/images/products/outdoor/flood-light (1).png",
-        "/images/products/outdoor/flood-light (2).png",
-        "/images/products/outdoor/flood-light (3).png",
-        "/images/products/outdoor/flood-light (4).png"
+        "/images/outdoor/24LENCY.jpeg",
+        "/images/outdoor/24WLENCY.jpeg",
+        "/images/outdoor/24WLENCY (1).jpeg",
+        "/images/outdoor/36WLENCY.jpeg",
+        "/images/outdoor/36WLENCY (1).jpeg",
+        "/images/outdoor/36WLENCY (2).jpeg",
+        "/images/outdoor/50WLENCY.jpeg",
+        "/images/outdoor/50WLENCY (1).jpeg",
+        "/images/outdoor/50WLENCY (2).jpeg",
+        "/images/outdoor/100WLENCY.jpeg",
+        "/images/outdoor/100WLENCY (1).jpeg",
+        "/images/outdoor/100WLENCY (2).jpeg"
       ],
       "features": [
         "Integrated reflector and heat sink, free of screw fixing.",
